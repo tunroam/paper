@@ -4,16 +4,19 @@
 The device needs to add a new Wi-Fi network,
 using the following configuration:
 
-| field | value |
-| --- | ------------ |
-| SSID | "tunroam.org 19" |
-| Security | 802.1x EAP |
-| EAP type | Protected EAP (PEAP) |
-| phase 2 | MSCHAPv2 |
-| CA certificate | up to user, default = no validation |
-| anonymous *identity* | see below |
-| *identity* | see below |
-| password | see below |
+| field | value | default |
+| --- | ------ | --- |
+| SSID | "tunroam.org 19" | |
+| Security | 802.1x EAP | |
+| EAP type | Protected EAP (PEAP) | |
+| phase 2 | MSCHAPv2 | |
+| CA certificate | *variable* | no validation |
+| anonymous identity | *variable*| |
+| identity | *variable* | |
+| password | *variable* | "password" |
+
+The *variable* fields are dependent on the
+`validate_certificate` flag being set.
 
 #### validate_certificate = false
 
@@ -22,7 +25,7 @@ the AP does not proxy the 802.1x request,
 giving the supplicant a different certificate at every location.
 
 Example:
-When we describe the *identities* for an OpenVPN/Wireguard VPN server running on port 443 UDP
+When we describe the identities for an OpenVPN/Wireguard VPN server running on port 443 UDP
 (IP protocol [0x11](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)),
 it is encoded as `11443`
 and has the flag character appended (as described in *[Protocol: AP Specification]*):
@@ -48,7 +51,7 @@ Anonymous identity example:
 11443b@<FQDN-EAP-SERVER>
 ```
 
-The *identity* is not exposed to the AP.
+The identity is not exposed to the AP.
 The realm part (`<FQDN-EAP-SERVER>`) MUST be the same
 for both identities
 (as described in *[Protocol: AP Specification]*).

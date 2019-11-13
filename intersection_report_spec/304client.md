@@ -10,6 +10,3 @@ The following information is required:
 - domain or IP of VPN server
 - IP protocol(s) (and port number(s)) of VPN server
 - will the supplicant validate the 802.1x certificate?
-  - No (default)
-  - Yes; client needs to set up an external authentication server
-

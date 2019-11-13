@@ -59,6 +59,7 @@ RADIUS server and would receive access control list (ACL) rules in return
 (if no rules, client is Rejected).
 The RADIUS server will receive data on connecting clients.
 
+<!--
 ### Convert channel
 
 We expect that setting up a covert channel via an AP that implements
@@ -66,15 +67,19 @@ this protocol is infeasible,
 since abiding by the requirement to use a VPN is the easiest way to use
 the AP.
 Further research could explore this into depth.
+-->
 
+<!--
 ### Wildcard DNS
 
-The protocol currently allows one to use it for VPN providers that provide a wildcard
+The protocol currently enables it to be used with VPN providers that provide a wildcard
 for their VPN endpoint
-(e.g. `*.vpnprovider.tld` makes `tunroam.vpnprovider.tld` possible).
+(e.g. `*.vpnprovider.tld` makes `tunroam.vpnprovider.tld` possible),
+since it has no requirements on DNS records and also allows users to use an IP address.
 This can be mitigated by validating DNSSEC NSEC
 ([RFC3845](https://tools.ietf.org/html/rfc3845)).
 What are the implications and or benefits of this?
+-->
 
 ### Malicious usage without VPN
 
