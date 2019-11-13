@@ -9,8 +9,8 @@ This traffic also has impact on the latency and bandwidth of the client.
 
 
 The specification states that the network
-SHOULD enforce network policies,
-which is not implemented in our setup.
+SHOULD enforce *[Network policies]*,
+which is not implemented in our *[Test setup]*.
 While this does adhere to the specification,
 it is an undesirable situation.
 We argue that it is feasible to enforce network policies,
@@ -32,5 +32,5 @@ and considered it out of scope for this research.
 
 The PoC currently proxies the request to a second authentication server
 on the same device,
-as described in section *[Inner-tunnel]*.
+the *[Inner-tunnel]*.
 

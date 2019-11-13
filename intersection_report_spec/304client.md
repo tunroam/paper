@@ -1,6 +1,6 @@
 ## Protocol: Supplicant / client
 
-The motivation for the settings of the client can be found in the AP specification.
+The motivation for the settings of the client can be found in *[Protocol: AP Specification]*.
 The client needs to configure two aspects,
 the 802.1x wireless configuration
 and a VPN client.

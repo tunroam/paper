@@ -64,19 +64,22 @@ which is what we will use during our research.
 
 ### OpenVPN
 
-[OpenVPN](https://openvpn.net/faq/why-does-openvpn-use-udp-and-tcp/)
-will
-"*always first try UDP, and if that fails, then try TCP.*"
+OpenVPN will
+"always first try UDP, and if that fails, then try TCP."[^openvpnudp]
 This allows our AP to whitelist UDP traffic,
 enabling the client to use TCP on other networks where UDP is blocked.
 This is the second motivation for picking OpenVPN over IPsec
 during testing.
 
+[^openvpnudp]: https://openvpn.net/faq/why-does-openvpn-use-udp-and-tcp/
+
 ### Preinstalled
 
 We observed that OpenVPN is usually not supported by default on OSes
 (except Chromebook) but IPsec based tunnels are.
-This made us decide that the protocol would support multiple ports and protocols.
+This made us decide that the protocol would support
+*[Multiple protocols and ports]*.
+
 
 ### Suggestion
 
@@ -84,9 +87,7 @@ The VPN provides a client with access to APs implementing this protocol.
 The VPN will also provide additional security when using other WiFi APs.
 We therefore suggest to use a VPN on all foreign Wi-Fi networks.
 
-One
-MAY
-use OpenVPN with port 443 TCP and UDP.
+One MAY use OpenVPN with port 443 TCP and UDP.
 This will work on regular public Wi-Fi that have
 TCP 443 (HTTPS) whitelisted.
 

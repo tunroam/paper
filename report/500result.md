@@ -59,7 +59,7 @@ as long as the client is able setup a connection to its VPN server.
 - How would the authentication server change the network policies?
 
 We showed example firewall rules that can be implemented.
-In our setup, these rules can be set by the custom Python script,
+In our *[Test setup]*, these rules can be set by the custom *[Python3]* script,
 triggered in the authentication server.
 
 
@@ -68,7 +68,8 @@ triggered in the authentication server.
 - How would a client communicate to the AP its VPN endpoint?
 - What modifications or configurations are required to an authentication (802.1x) server to enable this protocol?
 
-We showed that the client is able to communicate the VPN endpoint using the EAP identity field.
+We showed that the client is able to communicate the VPN endpoint using the
+*[802.1x identity]*.
 This requires modifications to the authentication server,
 without changing to authentication client (`hostapd`)
 or supplicant (e.g. smartphone).

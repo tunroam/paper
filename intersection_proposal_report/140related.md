@@ -1,6 +1,6 @@
 ## Related work
 
-When it comes to regular APs (access point),
+When it comes to regular APs,
 the operator is able to see the traffic of the clients it facilitates,
 giving the client less privacy and the operator more control on the network content.
 In the context of Open Wireless, the EFF states

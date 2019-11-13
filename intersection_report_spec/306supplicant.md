@@ -25,7 +25,7 @@ Example:
 When we describe the *identities* for an OpenVPN/Wireguard VPN server running on port 443 UDP
 (IP protocol [0x11](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)),
 it is encoded as `11443`
-and has the flag character appended (as described in the specification):
+and has the flag character appended (as described in *[Protocol: AP Specification]*):
 
 ```
 11443a@<ADDRESS-VPN-SERVER>
@@ -35,7 +35,7 @@ where `<ADDRESS-VPN-SERVER>` is an IP address or fully qualified domain name (FQ
 
 The password field needs to have the value "password",
 to allow the authentication server to complete the
-Challenge-Handshake Authentication Protocol (CHAP) procedure.
+Challenge-Handshake Authentication Protocol (*[CHAP]*) procedure.
 
 #### validate_certificate = true
 
@@ -51,7 +51,7 @@ Anonymous identity example:
 The *identity* is not exposed to the AP.
 The realm part (`<FQDN-EAP-SERVER>`) MUST be the same
 for both identities
-(as described in the specification).
+(as described in *[Protocol: AP Specification]*).
 The user part of the identity and the password
 MAY
 be specified for the specific needs of the

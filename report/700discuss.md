@@ -7,8 +7,9 @@ https://www.scribbr.com/dissertation/discussion/
 Networks that only allow VPN traffic were already implemented,
 but we showed that it is possible to allow for dynamic VPN endpoint validation
 and whitelisting of specific IP protocols and ports.
-We (ab)use the 802.1x identity to communicate the VPN endpoint from the supplicant
-to the authentication server.
+We (ab)use the *[802.1x identity]* to communicate the VPN endpoint from the supplicant
+to the 
+*[802.1x authentication server]*.
 
 Access Point (AP) providers can use this Open Source solution
 to share their internet without liability concerns.

@@ -55,7 +55,7 @@ and the option to relay EAP requests
 (for clients who desire to validate the server certificate).
 -->
 The custom code for this protocol is implemented in the
-`pre`-authorize script.
+*[Pre-authorize]* script.
 
 In larger networks (e.g. campus)
 we expect the WAP (`hostapd`)

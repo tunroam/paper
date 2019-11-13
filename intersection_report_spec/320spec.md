@@ -6,9 +6,9 @@ we now look into how
 &mdash; the authentication server used by &mdash;
 the AP handles authentication requests.
 
-We start by defining/parsing the data received by the supplicant,
-followed by the authentication server that receives this data.
-This section concludes with network policies the AP
+We start by defining/parsing the *[802.1x identity]* received by the supplicant,
+followed by the *[802.1x authentication server]* that receives this data.
+This section concludes with *[Network policies]* the AP
 SHOULD
 implement.
 
