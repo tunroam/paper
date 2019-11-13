@@ -10,7 +10,7 @@ keywords:
 - open source
 - TUNroam
 
-#documentclass: article #book,report
+documentclass: article #article,book,report
 papersize: a4 #letter
 pagestyle_report: headings
 lof: false #list of figures
@@ -45,6 +45,9 @@ abstract_report: >
 # During writing the toc can give us a good overview of the paper
 toc_report: true
 toc-depth_report: 9
+secnumdepth_report: 3
+
+linkcolor_spec: blue
 
 #toc-depth_proposal: 0
 #toc-title_proposal: "____________________________"
