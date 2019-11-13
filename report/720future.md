@@ -1,5 +1,9 @@
 ## Future work
 
+This section discusses some potential future work,
+topics that may enrich or strengthen the protocol
+or implementations of it.
+
 <!--
 Since the 802.1x supplicant is configured with the information of the VPN
 (when no certificate validation is done),

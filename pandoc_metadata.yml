@@ -43,7 +43,7 @@ abstract_report: >
   and verified it through a Proof of Concept (PoC).
 
 # During writing the toc can give us a good overview of the paper
-toc_report: false
+toc_report: true
 toc-depth_report: 9
 
 #toc-depth_proposal: 0

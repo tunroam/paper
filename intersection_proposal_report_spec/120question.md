@@ -3,6 +3,7 @@
 To understand the research question(s),
 we image a setup where the client connects to an AP
 using a VPN.
+
 The VPN may be a VPN provider or its own home router with VPN server and modified AP.
 This allows APs to whitelist VPN endpoints and creates an incentive to create an AP.
 The AP provider gets a VPN endpoint,
