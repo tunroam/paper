@@ -43,6 +43,7 @@ and limits the traffic flowing through the Wi-Fi provider to VPN traffic.
 The goal of this research is to develop a protocol that allows
 secure Wi-Fi sharing by upgrading Wi-Fi APs.
 
+\pagebreak
 ```
  ________                           ___________
 |Client  |  |foreign|  |internet|  |Client's   |

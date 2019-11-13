@@ -11,7 +11,7 @@ on the same system on chip (SoC).
 `hostapd` is the Wireless Access Point (WAP),
 which is the Network Access Server (NAS).
 
-
+\pagebreak
 ```
                    AP (SoC) <-----L2----> router
          _____________|_____________   _____|____
