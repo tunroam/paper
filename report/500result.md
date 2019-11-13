@@ -1,7 +1,7 @@
 # Results
 
 Following the 
-IaC (infrastructure as code)
+infrastructure as code (IaC)
 paradigm,
 the installation script[^tunroamnetworking]
 proof that we are able to construct a setup
@@ -95,7 +95,7 @@ however, this was
 [disabled](https://www.draytek.com/support/knowledge-base/5680)
 by the ISP and updating this firmware was deemed infeasible
 [@lentinkrouterisp]
-- Some IoT electronics we tested only support WiFi using PSK (pre-shared key) <!-- and IPv4 -->
+- Some IoT electronics we tested only support WiFi using pre-shared key (PSK) <!-- and IPv4 -->
 - OpenWrt has options for remote control[^openwrtremote],
 which allows
 &mdash; an external authentication server supporting this protocol &mdash;

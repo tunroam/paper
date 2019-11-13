@@ -59,7 +59,7 @@ the authentication request is rejected without forwarding the request.
 ##### Motivation
 
 802.1x supplicants like iOS require the validation of a certificate
-and other systems (Windows) require admin rights to disable validation.
+and other systems (e.g. Windows) require admin rights to disable validation.
 
 Some supplicants have the option to disable certificate validation,
 allowing every AP to use a unique self signed certificate.
@@ -85,7 +85,7 @@ https://framebyframewifi.net/2017/01/29/use-lets-encrypt-certificates-with-freer
 
 We suggest to install the specific server certificate in the supplicant,
 since
-[validating the CN (common name)](https://www.securew2.com/blog/8021x-vs-https-server-certificate-validation/)
+[validating the common name (CN)](https://www.securew2.com/blog/8021x-vs-https-server-certificate-validation/)
 of a certificate works for a DNS name but is not feasible for all supplicants
 (e.g. Android 9 supports it, on a Chromebook it is not an option).
 

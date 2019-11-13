@@ -133,7 +133,7 @@ be rejected if this requirement is not met.
 
 All IPv4 addresses
 MUST
-be in the dotted-decimal form
+be in the dotted-decimal notation
 ([RFC1123](https://tools.ietf.org/html/rfc1123)).
 IPv6 addresses
 MUST

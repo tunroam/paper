@@ -32,7 +32,7 @@ many are unaware of privacy risks
 [@consolvo2010].
 Users who are aware of the risks
 &mdash; and do not take extra security measures &mdash;
-place trust in the Wi-Fi provider when connecting to an AP (access point).
+place trust in the Wi-Fi provider when connecting to an access point (AP).
 
 We can remove this trust issue between both parties
 when accessing clients tunnel traffic via their home location

@@ -1,6 +1,6 @@
 ### Wireless configuration
 
-The SSID (service set identifier)
+The service set identifier (SSID)
 MUST
 be
 "tunroam.org 19".

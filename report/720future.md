@@ -51,7 +51,7 @@ a RADIUS server implementing this protocol;
 what would be the (trust/security/privacy) implications?
 This would allow an existing wireless infrastructure
 to use this external
-RADIUS server and would receive ACL (access control list) whitelist rules in return
+RADIUS server and would receive access control list (ACL) rules in return
 (if no rules, client is Rejected).
 The RADIUS server will receive data on connecting clients.
 
@@ -84,7 +84,7 @@ with the IP address of the website set in the `anonid` realm.
 This allows the attacker to visit the website
 (e.g. by modifying `/etc/hosts`)
 without VPN,
-leaking the SNI (Server Name Indication) to the ISP of the AP provider.
+leaking the server name indication (SNI) to the ISP of the AP provider.
 
 Future research could look into (deep) packet inspection (DPI)
 or other ways to avoid this potential abuse case.

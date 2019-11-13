@@ -90,7 +90,7 @@ The discussion on Github suggests it will use a different format
 and
 &mdash; at the moment of writing &mdash;
 is under active development[^python3discuss].
-We will create our script using Python3, since Python2 is EOF (end of life)
+We will create our script using Python3, since Python2 is end of life (EOF)
 in less than two months.
 
 [^python3discuss]: https://github.com/FreeRADIUS/freeradius-server/issues/2351

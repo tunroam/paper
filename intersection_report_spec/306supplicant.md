@@ -31,11 +31,11 @@ and has the flag character appended (as described in the specification):
 11443a@<ADDRESS-VPN-SERVER>
 ```
 
-where `<ADDRESS-VPN-SERVER>` is an IP address or FQDN (fully qualified domain name).
+where `<ADDRESS-VPN-SERVER>` is an IP address or fully qualified domain name (FQDN).
 
 The password field needs to have the value "password",
-to allow the authentication server to complete the CHAP
-(Challenge-Handshake Authentication Protocol) procedure.
+to allow the authentication server to complete the
+Challenge-Handshake Authentication Protocol (CHAP) procedure.
 
 #### validate_certificate = true
 
@@ -67,13 +67,13 @@ as seen in the following IPsec example:
 ```
 
 where
-`0x11 = UDP` (User Datagram Protocol),
-`port 500 = IKE` (Internet Key Exchange),
+`0x11 =` User Datagram Protocol (UDP),
+`port 500 =` Internet Key Exchange (IKE),
 `port 4500 = NAT-T`
 [(RFC 3947 section 4)](https://tools.ietf.org/html/rfc3947),
-`0x32 = ESP` (Encapsulating Security Payload)
+`0x32 =` Encapsulating Security Payload (ESP)
 and
-`0x33 = AH` (Authentication Header).
+`0x33 =` Authentication Header (AH).
 
 
 The AP

@@ -1,7 +1,7 @@
 ## Conclusion
 
 We have designed a protocol
-&mdash; using existing protocols available on COTS (commercially off the shelf) clients
+&mdash; using existing protocols available on commercially off the shelf (COTS) clients
 &mdash; that eliminates the need for trust between client and Wi-Fi provider,
 using a VPN tunnel.
 Q.E.D.

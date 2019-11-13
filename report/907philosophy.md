@@ -19,7 +19,7 @@ who also provide an AP.
 This partisanship is also seen in
 MIT License
 versus
-GPL (General Public License)
+General Public License (GPL)
 for software;
 the former allows anyone to use it,
 while the latter requires one to have the same shared value:

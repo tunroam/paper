@@ -22,6 +22,6 @@ TL;DR a research question should never be able to be answered with yes or no!
 
 
 - Can we design a protocol
-&mdash; using existing protocols available on COTS (commercially off the shelf) clients
+&mdash; using existing protocols available on commercially off the shelf (COTS) clients
 &mdash; that eliminates the need for trust between client and Wi-Fi provider,
 using a VPN tunnel?

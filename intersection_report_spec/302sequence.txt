@@ -6,10 +6,10 @@ minimal example,
 where
 all aspects of the protocol
 are implemented
-on the same device (SoC system on chip).
+on the same system on chip (SoC).
 
-`hostapd` is the WAP (Wireless Access Point),
-which is the NAS (Network Access Server).
+`hostapd` is the Wireless Access Point (WAP),
+which is the Network Access Server (NAS).
 
 
 ```

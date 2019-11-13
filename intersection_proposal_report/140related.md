@@ -34,7 +34,7 @@ but provides it with the VPN endpoint location,
 using fields in the 802.1X authentication.
 This will allow the AP to whitelist traffic for that VPN endpoint.
 
-The decentralized VPN setup with every AP (hotspot) being a VPN exit node
+The decentralized VPN setup with every hotspot being a VPN exit node
 is planned to be part of the Open Garden protocol
 [@opengardenmedium].
 In our research every AP
@@ -52,7 +52,7 @@ In the context of SlyFi;
 [@klasnja2009]
 However, we will use the protocols available on modern clients.
 
-WPA3 (Wi-Fi Protected Access) protects clients privacy by
+Wi-Fi Protected Access version 3 (WPA3) protects clients privacy by
 preventing other users of the AP from being able to see their traffic.
 However, this does not prevent the AP provider from eavesdropping.
 Our research will use a VPN tunnel,
@@ -68,8 +68,8 @@ Modern web browsers are starting to use encrypted DNS,
 which will increase the client's privacy
 [@ncscdns].
 However, we propose to use a VPN tunnel,
-which also hides additional data such as the SNI
-(server name indication).
+which also hides additional data such as
+the server name indication (SNI).
 
 
 ### Related (free) wireless solutions

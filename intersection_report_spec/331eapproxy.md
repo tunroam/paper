@@ -4,8 +4,8 @@ When the supplicant indicates
 &mdash; by setting the `validate_certificate` flag &mdash;
 it needs the authentication request to be proxied,
 the authentication server
-serves as a NAS
-([Network Access Server](https://wiki.freeradius.org/glossary/NAS)).
+serves as a
+[Network Access Server (NAS)](https://wiki.freeradius.org/glossary/NAS).
 The server
 MAY
 [strip](https://github.com/FreeRADIUS/freeradius-server/blob/v3.0.x/raddb/proxy.conf)
