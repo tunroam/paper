@@ -30,18 +30,28 @@ commonly suggest to use a VPN.
 When it comes to users accessing Wi-Fi networks,
 many are unaware of privacy risks
 [@consolvo2010].
+Those who are aware of the risks, place trust in the Wi-Fi provider or
+take extra security measures.
+<!--
 Users who are aware of the risks
 &mdash; and do not take extra security measures &mdash;
 place trust in the Wi-Fi provider when connecting to an access point (AP).
+-->
+
 
 We can remove this trust issue between both parties
 when accessing clients tunnel traffic via their home location
 [@sastry2007architecting].
+This restricts the traffic passing the Wi-Fi provider to VPN traffic
+and creates privacy for the client.
+<!--
 This creates privacy and security for the visiting client
 and limits the traffic flowing through the Wi-Fi provider to VPN traffic.
+-->
+
 
 The goal of this research is to develop a protocol that allows
-secure Wi-Fi sharing by upgrading Wi-Fi APs.
+secure Wi-Fi sharing.
 
 \pagebreak
 ```
