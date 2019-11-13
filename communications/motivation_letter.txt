@@ -1,0 +1,26 @@
+Subject: MSc. thesis (4w) supervisor
+
+Hi,
+
+This is an unusual request; I'm looking for a thesis supervisor for my master Security and Network Engineering.
+(at which Jaap van Ginkel is a lecturer)
+
+For my thesis I'd like to create a open source Eduroam kind of network,
+not for educational purpose, but APs at home locations.
+The idea is described in the attached document.
+
+Since I've passed all courses of my study, I can start my thesis at any moment, preferably in a couple of weeks.
+I do need to make arrangements with my current employer (Rabobank) to take the time off to do this thesis
+and discuss it with the my professor.
+
+Some requirements from UvA:
+- spend 4 consecutive weeks full-time on the project
+- present at their location or, if that is not possible, here at our SNE/UvA site
+(source: https://rp.delaat.net/process.html)
+
+If there is an opportunity, I would love to introduce myself in person at your office.
+My resume can be found here: https://lentink.consulting/#resume
+
+Yours sincerely,
+Sander Lentink
+0617012655

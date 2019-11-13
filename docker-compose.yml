@@ -1,0 +1,9 @@
+version: '3'
+services:
+  build-document:
+    image: svlentink/texlive-with-libraries
+    volumes:
+      - $PWD:/data
+    working_dir: /data
+    entrypoint: ["/data/build.sh"]
+    command: ["$SUBJECT"] #use export SUBJECT=[report|proposal|slides]

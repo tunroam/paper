@@ -1,0 +1,50 @@
+To communicate the intention of the project,
+we ought to have a SSID which conveys:
+- that the AP provides free wifi
+- you need a VPN
+- people can participate (i.e. 'open')
+- more than one AP in system (i.e. 'roaming')
+- points to an url (e.g. thenameofproject.org as SSID)
+- maybe version number? 'nameofproject.org 19' in which 19 stands for version 2019
+
+
+brainfarts:
+- thesharedwifiproject
+- Wifree (inspired by oba.nl)
+- free4vpn
+- freewifi4vpns.org
+- openwireless movement
+- wifree4ovpn
+- safewifree
+- securewifree
+- securewirelesssharing
+- sharedsecurewifree
+- securewifreebyme
+- safewifree.org
+- safevpnroam
+- securoam
+- secroam
+- tunnelroam
+- vpnroam
+- tunroam
+- p2ptunroam
+- troami (tunnel roaming)
+- freewifi4tunnel
+- freeroam4vpn
+- freevpnroam
+- openvpnroam
+- opentunnels
+- tunme
+- Free-Fi
+- sharedwifiproject
+- SSID Open WiFi 19
+
+
+wifi in name does not make any sense,
+it is a Wi-Fi SSID!
+
+Many open networks have Free WiFi in their name,
+wifi is useless, since its an wifi ssid,
+free might be a useful indicator.
+
+https://github.com/torvalds/linux/blob/master/Documentation/networking/tuntap.txt#L214

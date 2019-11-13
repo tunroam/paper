@@ -1,0 +1,55 @@
+---
+title: Incentivize decentralized WiFi roaming through VPN on home routers
+author: # TODO this author format: https://pandoc-scholar.github.io
+- Sander.Lentink@os3.nl
+- Peter.Boers@surfnet.nl
+keywords:
+- WiFi
+- security
+- privacy
+- open source
+- TUNroam
+
+#documentclass: article #book,report
+papersize: a4 #letter
+pagestyle_report: headings
+lof: false #list of figures
+lot: false #list of tables
+#thanks: special thanks to john doe
+#description: some long description, not visible in paper but metadata
+
+# everything with _<DIR_NAME> is replaced by '' at runtime in build.sh
+subtitle_report:  >
+  Master thesis
+  Security and Network Engineering,
+  University of Amsterdam
+subtitle_proposal:  >
+  RP2 proposal
+  Security and Network Engineering,
+  University of Amsterdam
+subtitle_slides: >
+  RP2 rp-id 25,
+  Security and Network Engineering,
+  UvA
+abstract_report: >
+  TODO this is not the final version END NOTE
+  We found that it is possible to dynamically whitelist VPN endpoints
+  on Wi-Fi networks by providing the VPN endpoint details
+  in the 802.1x identity.
+  This reduces the libility concerns of Wi-Fi Access Point (AP) providers
+  and forces clients accessing these APs to use a VPN,
+  which in turn increases their privacy.
+  We modified a RADIUS server to implement this proposed protocol
+  and verified it through a Proof of Concept (PoC).
+
+# During writing the toc can give us a good overview of the paper
+toc_report: false
+toc-depth_report: 9
+
+#toc-depth_proposal: 0
+#toc-title_proposal: "____________________________"
+toc_proposal: false
+
+date_slides: 2019-11-13
+...
+

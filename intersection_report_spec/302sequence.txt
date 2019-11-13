@@ -1,0 +1,67 @@
+## Protocol introduction
+
+We provide an introduction through a
+sequence diagram showing a
+minimal example,
+where
+all aspects of the protocol
+are implemented
+on the same device (SoC system on chip).
+
+`hostapd` is the WAP (Wireless Access Point),
+which is the NAS (Network Access Server).
+
+
+```
+                   AP (SoC) <-----L2----> router
+         _____________|_____________   _____|____
+client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
+   |        |      |      |      |      |      |      |
+   a        |      |      |      |      |      |      |
+   #---b--->#      |      |      |      |      |      |
+   #        #--c-->#      |      |      |      |      |
+   #        #      #--d-->#      |      |      |      |
+   #        #      #      #--e----------------------->#
+   #        #      #      f      |      |      |      |
+   #        #      #      #--g-->#      |      |      |
+   #        #      #<--h--#      |      |      |      |
+   #        #<--i--#      |      |      |      |      |
+   #<---j---#      |      |      |      |      |      |
+   #---k-------------------------=----->#      |      |
+   #<--------------------------------l--#      |      |
+   #---m-------------------------=------------------->#
+```
+
+a. 802.1x client (supplicant) scans for AP and finds foreign AP with the specific SSID for this protocol
+b. supplicant connects to authenticator (`hostapd`) providing the VPN endpoint location in the 802.1x identity
+c. authenticator connects to authentication server
+d. authentication server uses custom `pre`-authorize script
+e. script validates that provided information points to a VPN server
+f. `if VPN: continue else return` 802.1x rejected
+g. allow (whitelist) egress for provided VPN details
+h. OK
+i. OK
+j. 802.1x client accepted (`wlan` bridged with `eth0`; L2 access to router)
+k. client requests DHCP lease (IP address)
+l. router provides IP to client (thus NAT in router)
+m. client connects to VPN server
+
+
+<!--
+NOTE:
+The sequence diagram does not include DNS
+(the IP address should be used)
+and the option to relay EAP requests
+(for clients who desire to validate the server certificate).
+-->
+The custom code for this protocol is implemented in the
+`pre`-authorize script.
+
+In larger networks (e.g. campus)
+we expect the WAP (`hostapd`)
+to be on different hardware than
+the 802.1x authentication server.
+<!--
+(including the `pre`-authorize script).
+-->
+

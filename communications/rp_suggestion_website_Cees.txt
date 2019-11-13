@@ -1,0 +1,62 @@
+For my RP2 I propose a topic, for which Surfnet is able to supervise me.
+We agreed that I could start mid Oct. and will be present at their office.
+Could someone of rp@os3.nl review my topic suggestion?
+I wrote it similar to the format found on rp.delaat.net
+
+<!--
+BELOW IS THE TEXT FOR ON THE WEBSITE
+-->
+sander.lentink=>os3.nl
+peter.boers=>surfnet.nl
+
+<h4>Incentivize distributed shared WiFi through VPN on home routers</h4>
+
+Many forms of free WiFi exists such as
+ad based solutions [1],
+provider initiatives [2],
+hotel/restaurant/etc. hotspots and
+Open Wireless Movement [3].
+Security and privacy are important factors for sharing wireless.
+The provider does not want to be held liable [4]
+and the client wants privacy.
+
+<br/><br/>
+
+The RP will consist of creating a protocol + Proof of Concept
+to securely join WiFi networks and share your network.
+A client connects to a wireless AP using RADIUS credentials; username = PORT@domain,
+which indicates to which VPN the client will connect to.
+The AP (upgraded home WiFi router) only lets clients connect to VPN servers,
+which run on the client's home router,
+creating a tunnel between a device (client) and the owner's home router (VPN endpoint).
+
+<br/><br/>
+
+The client has the VPN location embedded in his 802.1x credentials
+for the shared SSID (like Eduroam) for participating APs.
+Additionally, the client has a VPN client installed,
+enabling APs to only allow (whitelist) VPN traffic
+and a DNS req. for VPN endpoint discovery.
+This creates the safety for joining any wireless (using the VPN)
+and sharing your wireless (whitelisting VPN traffic)
+without worry for liability issues.
+
+<br/><br/>
+
+This setup will incentivize users to upgrade their routers,
+giving them more security when connecting to any foreign wireless (through VPN)
+and provides access to wireless in more places (which require VPN to connect).
+
+<br/><br/>
+
+This topic is suggested by the student,
+who can be asked for further explanation/sequence diagram (which will also be in the proposal).
+
+
+<br/><br/>
+
+1. worldwifi.io
+2. hotspots.wifi.comcast.com
+3. www.eff.org/issues/open-wireless
+4. www.eff.org/wp/open-wi-fi-and-copyright-primer-network-operators
+
