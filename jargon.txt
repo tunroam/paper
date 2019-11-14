@@ -122,3 +122,4 @@ nameserver
 SNI
 proxied
 radiusd
+wlan
