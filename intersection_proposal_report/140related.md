@@ -10,17 +10,17 @@ The topic of copyright for Open Wireless is discussed in a white paper
 , which *should not be taken as legal advice*
 -->
 [@effcopyright].
-Clients in our research only have VPN traffic,
+Clients using our protocol are merely allowed to use VPN traffic,
 making the AP a mere
 [passive conduit](https://openwireless.org/myths-legal.html),
-unable to verify the traffic.
+unable to read the traffic.
 <!--
 thus like any other router on the internet the traffic passes.
 -->
 
 We need traffic prioritization to prevent "free riding" by neighbors
 [@freeridersfear].
-For our research we consider this subject as out of scope.
+For our research we consider this subject out of scope.
 
 For National Research and Educational Networks
 it was found that authentication via 802.1X
@@ -29,18 +29,24 @@ was more safe than a web portal and more scalable than using VPN-based authentic
 They also mention that
 standardization for wireless configuration
 is required to prevent reconfiguration at different locations.
-In our research the client does not authentication to our AP,
-but provides it with the VPN endpoint location,
-using fields in the 802.1X authentication.
-This will allow the AP to whitelist traffic for that VPN endpoint.
+In our research the 802.1x authentication is used to provide the AP
+with the VPN endpoint location.
+The actual authentication is done by validating this VPN endpoint,
+instead of the password field.
 
+
+The Open Garden protocol plans to make every hotspot
+a VPN exit node,
+creating a decentralized VPN setup
+<!--
 The decentralized VPN setup with every hotspot being a VPN exit node
 is planned to be part of the Open Garden protocol
+-->
 [@opengardenmedium].
-In our research every AP
+This matches our
+research where every AP
 SHOULD
-be a VPN server,
-creating decentralized VPN servers.
+be a VPN server.
 
 Unaware users can be made aware of their behavior
 in order to improve security and privacy
@@ -50,19 +56,21 @@ However, we propose a technical solution instead of increasing awareness.
 In the context of SlyFi;
 "for such infrastructural solutions to be effective, they need both to be incorporated into wireless standards and to become widely deployed."
 [@klasnja2009]
-However, we will use the protocols available on modern clients.
+However, we will use the protocols available on COTS clients.
 
-Wi-Fi Protected Access version 3 (WPA3) protects clients privacy by
-preventing other users of the AP from being able to see their traffic.
+
+Wi-Fi Protected Access version 3 (WPA3) enables
+privacy between clients by providing
+individualized encryption.
 However, this does not prevent the AP provider from eavesdropping.
 Our research will use a VPN tunnel,
-preventing the AP provider from seeing the traffic.
+creating *end* (client) *to* VPN *end*point *encryption*
 
-When providers create Wi-Fi sharing (e.g. using Fon) between homes,
+When providers enable Wi-Fi sharing (e.g. using Fon) between homes,
 they could enable Wi-Fi roaming,
 preventing the IP address of the client to change when walking through a street.
-This can also be done using this protocol at a larger network (e.g. Airport),
-but not between houses in a street (independent APs).
+This can also be done using this protocol at a larger network (e.g. campus),
+but not between houses (independent APs).
 
 Modern web browsers are starting to use encrypted DNS,
 which will increase the client's privacy
