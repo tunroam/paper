@@ -1,6 +1,5 @@
 ## VPN protocols
 
-*Q: Which VPN protocol(s) are supported on COTS clients?*
 
 We reason that providers of paid VPN service want to support the VPN
 protocols with the largest market adoption.
@@ -54,7 +53,7 @@ ExpressVPN lists the following options[^expressvpn]:
 
 When we look at these protocols,
 both IKEv2/IPsec and OpenVPN are secure solutions.
-Chromebooks
+Chrome OS
 [require L2TP](https://support.google.com/chromebook/answer/1282338?hl=en)
 for using IKEv2,
 which requires more open ports than OpenVPN.
@@ -76,7 +75,7 @@ during testing.
 ### Preinstalled
 
 We observed that OpenVPN is usually not supported by default on OSes
-(except Chromebook) but IPsec based tunnels are.
+(except Chrome OS) but IPsec based tunnels are.
 This made us decide that the protocol would support
 *[Multiple protocols and ports]*.
 

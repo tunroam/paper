@@ -32,19 +32,33 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #---m-------------------------=------------------->#
 ```
 
-a. 802.1x client (supplicant) scans for AP and finds foreign AP with the specific SSID for this protocol
-b. supplicant connects to authenticator (`hostapd`) providing the VPN endpoint location in the 802.1x identity
-c. authenticator connects to authentication server
-d. authentication server uses custom `pre`-authorize script
-e. script validates that provided information points to a VPN server
+a. Supplicant (client) scans for an AP
+and finds a foreign AP
+that matches the
+*[Wireless configuration]* (SSID).
+b. Supplicant connects to the authenticator
+(`hostapd`) using
+*[802.1x credentials]*,
+which communicate the VPN endpoint's
+*[Protocols and ports]* in the
+*[802.1x identity]*.
+c. Authenticator connects to the
+*[802.1x authentication server]*.
+d. This authentication server uses a custom
+*[Pre-authorize]* script.
+e. Script validates that provided information points to a VPN endpoint.
 f. `if VPN: continue else return` 802.1x rejected
-g. allow (whitelist) egress for provided VPN details
+g. Script creates
+*[Network policies]*,
+these
+*[Implemented policies]*
+are set to whitelist the VPN endpoint.
 h. OK
 i. OK
 j. 802.1x client accepted (`wlan` bridged with `eth0`; L2 access to router)
 k. client requests DHCP lease (IP address)
 l. router provides IP to client (thus NAT in router)
-m. client connects to VPN server
+m. client connects to *[VPN server]*
 
 
 <!--

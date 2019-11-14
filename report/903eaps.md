@@ -5,8 +5,6 @@ Good intro on the matter:
 https://sites.google.com/site/amitsciscozone/home/switching/peap---protected-eap-protocol
 -->
 
-*Q: Which authentication protocols are available on COTS clients?*
-
 This section details the selection of the EAP protocol we use.
 We initially looked at which EAP protocols are
 available by default on consumer electronics,
@@ -16,7 +14,7 @@ The mobile devices are composed of an older (5.1)
 and supported version (9)
 of the Mobile Operating System with the largest market share
 [@mobilestatcounter].
-For the desktop environments we looked at a corporate Windows laptop and a Chromebook.
+For the desktop environments we looked at a corporate Windows laptop and Chrome OS.
 The data on Apple devices is retrieved from `*.apple.com`.
 
 ### Android 5.1 (Moto G first gen.)
@@ -52,7 +50,7 @@ The data on Apple devices is retrieved from `*.apple.com`.
   - PWD
 
 
-### Chromebook (77.0.3865.35)
+### Chrome OS (77.0.3865.35)
 
 - EAP
   - LEAP

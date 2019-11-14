@@ -87,7 +87,7 @@ We suggest to install the specific server certificate in the supplicant,
 since
 [validating the common name (CN)](https://www.securew2.com/blog/8021x-vs-https-server-certificate-validation/)
 of a certificate works for a DNS name but is not feasible for all supplicants
-(e.g. Android 9 supports it, on a Chromebook it is not an option).
+(e.g. Android 9 supports it, on a Chrome OS it is not an option).
 
 
 
