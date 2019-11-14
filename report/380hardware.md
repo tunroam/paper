@@ -30,7 +30,7 @@ does not support WiFi on the Orange Pi[^openwrtwifi].
 
 <!--
 About the [Orange Pi Zero Plus](https://openwrt.org/toh/hwdata/xunlong/xunlong_orange_pi_zero_plus)
-we used for testing, OpenWRT stated that WLAN was
+we used for testing, OpenWrt stated that WLAN was
 ['not supported'](https://openwrt.org/toh/views/toh_available_864?dataflt%5BModel*~%5D=zero+plus)
 
 https://openwrt.org/toh/views/toh_available_864?dataflt%5BModel*~%5D=zero+plus

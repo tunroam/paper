@@ -43,7 +43,7 @@ When the VPN endpoint or the RADIUS server for `validate_certificate`
 points to a home location without a fixed IP address,
 the server should be able to update its DNS records when the IP address changes.
 Besides DNS,
-other options exists such as *dynamic IPSec* or
+other options exists such as *dynamic IPsec* or
 Tunnel Endpoint Discovery (TED).
 Future research could explore ways to implement this.
 
@@ -142,7 +142,7 @@ the protocol.
 - Additional security, such as update policies for the device with exposed ports
 - [Passpoint](https://www.wi-fi.org/discover-wi-fi/passpoint) (Hotspot 2.0)
 - Propagating AP info using IEEE [802.11u\-2011](https://webresources.ruckuswireless.com/pdf/wp/wp-how-interworking-works.pdf)
-- Create OpenWRT package of the protocol
+- Create OpenWrt package of the protocol
 - Can we store the VPN certificate in DNS (DANE) and retrieve it on the client (browser) using DoH?
 <!--
 - Additional SSID on SoC with PSK for legacy devices (IoT may not support EAP)

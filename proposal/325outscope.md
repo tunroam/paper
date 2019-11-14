@@ -10,7 +10,7 @@
 - Additional SSID with PSK for legacy devices (IoT may not support EAP)
 - [Passpoint](https://www.wi-fi.org/discover-wi-fi/passpoint) (Hotspot 2.0)
 - Propagating AP info using IEEE [802.11u\-2011](https://webresources.ruckuswireless.com/pdf/wp/wp-how-interworking-works.pdf)
-- Create OpenWRT package of the protocol
+- Create OpenWrt package of the protocol
 - Can we store the VPN certificate in DNS (DANE) and retrieve it on the client (browser) using DoH?
 
 #### 802.11u

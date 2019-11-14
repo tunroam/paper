@@ -30,6 +30,7 @@ MSCHAP
 MSCHAPv
 Moto
 NIC
+Netfilter
 OpenWrt
 PEAP
 PPTP
@@ -111,3 +112,13 @@ innerid
 dport
 eth
 ACL
+EOL
+Hostname
+ethernet
+bian
+IaC
+plaintext
+nameserver
+SNI
+proxied
+radiusd

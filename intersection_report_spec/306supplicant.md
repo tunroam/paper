@@ -25,7 +25,7 @@ the AP does not proxy the 802.1x request,
 giving the supplicant a different certificate at every location.
 
 Example:
-When we describe the identities for an OpenVPN/Wireguard VPN server running on port 443 UDP
+When we describe the identities for an OpenVPN/WireGuard VPN server running on port 443 UDP
 (IP protocol [0x11](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)),
 it is encoded as `11443`
 and has the flag character appended (as described in *[Protocol: AP Specification]*):

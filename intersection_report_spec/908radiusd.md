@@ -90,7 +90,7 @@ The discussion on Github suggests it will use a different format
 and
 &mdash; at the moment of writing &mdash;
 is under active development[^python3discuss].
-We will create our script using Python3, since Python2 is end of life (EOF)
+We will create our script using Python3, since Python2 is end of life (EOL)
 in less than two months.
 
 [^python3discuss]: https://github.com/FreeRADIUS/freeradius-server/issues/2351
@@ -105,7 +105,7 @@ the server needs to know the plaintext password.
 
 For the authentication we used
 [`rlm_eap_peap`](https://networkradius.com/doc/current/raddb/mods-available/eap/peap.html)
-which is a submodule of
+which is a sub module of
 [`rlm_eap`](https://networkradius.com/doc/current/raddb/mods-available/eap.html),
 which will use
 [`rlm_eap_mschapv2`](https://networkradius.com/doc/current/raddb/mods-available/eap/mschapv2.html),

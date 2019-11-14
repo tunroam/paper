@@ -6,7 +6,7 @@ The supervisor will allocate time for supervising this thesis.
 The AP (access point) for this research will be
 one or more SoC
 (System on Chip: e.g. `[`Banana`|`Orange`|`Raspberry`]` Pi)
-which will run Linux server or OpenWRT.
+which will run Linux server or OpenWrt.
 
 The student has a SoC connected to his home router via wire,
 allowing remote configuration of the test setup.
