@@ -19,7 +19,6 @@ This shows that the authentication server on the SoC does:
 - Identity validation
 - Is able to derive whitelist rules from the `anonid`, as seen in section *[Implemented policies]*
 
-## New chapter TODO
 
 
 
@@ -44,11 +43,16 @@ Part of our initial research questions were:
 - What attributes do we need to validate to determine if a VPN server is listening on an endpoint?
 -->
 
+
+VPN servers might aim to appear as a different service,
+such as a HTTPS web server,
+to avoid being blocked.
+<!--
 We found that some VPN servers aim to be hard to detect as a VPN server.
+-->
 Therefore the current protocol only verifies if a socket is open,
 without any additional checks.
-This approach allows clients to use different VPN technologies.
-An overview is given in the section *[VPN protocols]*.
+This approach allows clients to use different *[VPN protocols]*.
 
 
 
@@ -158,6 +162,7 @@ The PoC used at the presentation demo shows that the protocol is feasible.
 When clients attempt to connect, the authentication server validates their
 VPN endpoint and is able to set *[Network policies]*.
 The PoC was creating using the installation scripts[^tunroamnetworking].
+
 
 #### Additional
 

@@ -1,9 +1,6 @@
 
 ### Implemented policies
 
-*Q. How can these network policies be managed?*
-
-
 Section
 *[Network policies]*
 states that those policies are a
@@ -26,6 +23,8 @@ INFO suggesting whitelist rules
 INFO Welcome aboard 11443_06443_00testA@localhost
 ```
 
-
+<!--
+done
+-->
 
 

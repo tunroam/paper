@@ -23,7 +23,7 @@ We need traffic prioritization to prevent "free riding" by neighbors
 For our research we consider this subject out of scope.
 
 For National Research and Educational Networks
-it was found that authentication via 802.1X
+it was found that authentication via 802.1x
 was more safe than a web portal and more scalable than using VPN-based authentication
 [@wierenga2005eduroam].
 They also mention that

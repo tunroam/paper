@@ -67,7 +67,7 @@ to make the identity case insensitive.
 The IP protocols are shown in section *[L4 Transport layer]*.
 
 The supplicant communicates the IP protocols to the authentication
-server by the *IP protocol id* in hexadecimal.
+server by the IP protocol id in hexadecimal.
 Additional information (i.e. port number) is appended to the id.
 If multiple are given, they are separated by an underscore.
 

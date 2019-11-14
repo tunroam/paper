@@ -64,8 +64,12 @@ fi
 
 # --personal /usr/lib/aspell/en-jargon.pws
 # the sed line removes link references
+# and code/comment blocks from spell check
 cat /tmp/bundled.md \
-  | sed 's/\[.*\]/\ /' \
+  | sed 's/\[@.*\]/\ /' \
+  | sed 's/\[^.*\]/\ /' \
+  | sed '/^```/,/^```/d' \
+  | sed '/^<!--/,/-->/d' \
   | aspell list -t \
   | sort \
   | uniq > misspelled.txt

@@ -104,7 +104,7 @@ https://opensource.apple.com/source/freeradius/freeradius-25/freeradius/doc/rlm_
 
 ### iOS
 
-The following applies to *iOS 12.3 and later*
+The following applies to "iOS 12.3 and later"
 [@iostypes].
 
 - 802.1X
