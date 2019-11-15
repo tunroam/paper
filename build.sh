@@ -65,7 +65,7 @@ fi
 # --personal /usr/lib/aspell/en-jargon.pws
 # the sed line removes link references
 # and code/comment blocks from spell check
-cat /tmp/bundled.md \
+cat /tmp/bundled.md /tmp/meta.yml \
   | sed 's/\[@.*\]/\ /' \
   | sed 's/\[^.*\]/\ /' \
   | sed '/^```/,/^```/d' \
@@ -122,6 +122,5 @@ pandoc \
   --number-sections \
   --output "`basename $SUBJECT`.pdf" \
   --bibliography /tmp/bundled.bib \
-  --reference-location section \
   /tmp/meta.yml \
   /tmp/bundled.md

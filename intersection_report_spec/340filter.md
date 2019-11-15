@@ -1,5 +1,17 @@
 ### Network policies
 
+```
+client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
+   |        |      |      |      |      |      |      |
+   #        #      #      #--g-->#      |      |      |
+   #        #      #<--h--#      |      |      |      |
+   #        #<--i--#      |      |      |      |      |
+   #<---j---#      |      |      |      |      |      |
+   #---k-------------------------=----->#      |      |
+   #<--------------------------------l--#      |      |
+   #---m-------------------------=------------------->#
+```
+
 It is in the interest of the AP provider to filter traffic,
 therefore we state that it
 MAY

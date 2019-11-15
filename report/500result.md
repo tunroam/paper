@@ -4,8 +4,8 @@
 Following the 
 infrastructure as code (IaC)
 paradigm,
-the installation script[^tunroamnetworking]
-proofed that were are able to construct a setup
+the installation scripts[^tunroamnetworking]
+proved that it is feasible to construct a setup
 that enables the proposed protocol.
 
 When we connected a client
@@ -41,6 +41,13 @@ Part of our initial research questions were:
 -->
 
 *How could the VPN endpoint details be communicated from the supplicant to the authentication server?*
+
+```
+client  |hostapd  auth
+   |        |      |
+   #---b--->#      |
+   #        #--c-->#
+```
 
 The protocol describes how
 the *[802.1x identity]*
@@ -106,6 +113,14 @@ We described the modifications to the RADIUS server in section
 -->
 
 *Which network policies are of interest to this protocol?*
+
+```
+client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
+   |        |      |      |      |      |      |      |
+   #---k-------------------------=----->#      |      |
+   #<--------------------------------l--#      |      |
+   #---m-------------------------=------------------->#
+```
 
 We discussed
 *[Network policies]*
@@ -176,8 +191,8 @@ The PoC was created using the installation scripts[^tunroamnetworking].
 #### Additional
 
 The following findings do not contribute
-to the protocol we ought to develop,
-however,
+to the protocol we developed.
+However,
 they do provide insights for future research.
 
 - The router used for our research is able to function as a RADIUS client,

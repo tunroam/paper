@@ -8,6 +8,7 @@ all aspects of the protocol
 are implemented
 on the same system on chip (SoC).
 
+In the following sequence diagram,
 `hostapd` is the Wireless Access Point (WAP),
 which is the Network Access Server (NAS).
 

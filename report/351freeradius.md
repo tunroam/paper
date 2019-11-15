@@ -1,10 +1,15 @@
 ### Configuring FreeRADIUS
 
 We use FreeRADIUS, since it
-"is the most popular and the most widely deployed RADIUS server"[^motivatefreerad],
-RADIUS is motivated in section *[802.1x authentication server]*.
+"is the most popular and the most widely deployed RADIUS server"[^motivatefreerad].
+While Diameter
+([RFC3588](https://tools.ietf.org/html/rfc3588))
+is a newer protocol,
+RADIUS was chosen since it is a widely adopted protocol
+in existing wireless infrastructures and routers.
 
 [^motivatefreerad]: https://networkradius.com/doc/current/introduction/FreeRADIUS.html
+
 
 
 We need three modifications on the authentication server:

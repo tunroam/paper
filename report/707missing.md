@@ -5,7 +5,7 @@ this protocol will be supported by
 ISP provided routers,
 since using a home location as a VPN endpoint will double the traffic to that router
 for a client when using it remotely.
-This traffic also has impact on the latency and bandwidth of the client.
+Using a VPN also impacts the latency and bandwidth of the client.
 
 
 The specification states that the network

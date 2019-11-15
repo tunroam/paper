@@ -1,4 +1,4 @@
-## Psychology of adoption
+#### Psychology of adoption
 
 Since the impact of this concept is dependent on the adoption,
 we need to consider that limiting some users could actually increase the adoption of APs.
@@ -11,6 +11,7 @@ being either a VPN provider
 &mdash; not adding an extra AP to the network &mdash;
 or another AP with VPN server.
 
+!["Client connects to VPN endpoint via foreign AP"](img/physical_layout.png)
 
 For larger parties providing free wifi,
 there is no incentive to filter clients using a VPN provider.

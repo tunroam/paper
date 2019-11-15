@@ -1,5 +1,12 @@
 ### 802.1x authentication server
 
+```
+client  |hostapd  auth   pre
+   |        |      |      |
+   #        #--c-->#      |
+   #        #      #--d-->#
+```
+
 #### validate_certificate
 <!--
 The following states that Windows only allows change of username for identity
@@ -13,9 +20,8 @@ and
 for the authentication server.
 If a supplicant provides an IP address instead of
 a FQDN,
-the AP
-MUST
-use this IP address for both.
+the AP MUST
+use this IP address for both the authentication and VPN server.
 
 The request proxied to
 the external server
@@ -25,7 +31,7 @@ use the RADIUS protocol
 on UDP 1812
 (not to be confused with UDP 1645, as mentioned in
 [RFC2138](https://tools.ietf.org/html/rfc2138))
-using the secret 'testing123'
+using the secret "testing123"
 (FreeRADIUS default).
 
 
@@ -57,6 +63,12 @@ the authentication request is rejected without forwarding the request.
 
 
 ##### Motivation
+
+Both the secret for proxying the RADIUS request ("testing123")
+and the identity validation when not proxying the RADIUS request ("password") are weak.
+These passwords are not used to secure the protocol,
+but to enable two parties who have no prior agreement,
+to share a secret so they can communicate with each other.
 
 802.1x supplicants like iOS require the validation of a certificate
 and other systems (e.g. Windows) require admin rights to disable validation.
@@ -103,10 +115,4 @@ requiring no modifications when proxying the request.
 Since the VPN endpoint validation requires an update to the authentication server
 &mdash; to support this protocol &mdash;
 we require this custom script to implement the DNS logic (i.e. prefix `vpn.`).
-
-While Diameter
-([RFC3588](https://tools.ietf.org/html/rfc3588))
-is a newer protocol,
-RADIUS was chosen since it is a widely adopted protocol
-in existing wireless infrastructures and routers.
 

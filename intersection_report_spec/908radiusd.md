@@ -23,6 +23,16 @@ We observe that the main configuration includes 3 files in its main context.
 
 ### Pre-authorize
 
+```
+client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
+   |        |      |      |      |      |      |      |
+   #        #      #--d-->#      |      |      |      |
+   #        #      #      #--e----------------------->#
+   #        #      #      f      |      |      |      |
+   #        #      #      #--g-->#      |      |      |
+   #        #      #<--h--#      |      |      |      |
+```
+
 The
 [`rlm_python`](https://wiki.freeradius.org/modules/Rlm_python)
 module provides a

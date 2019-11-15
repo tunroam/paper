@@ -1,5 +1,11 @@
 ### Wireless configuration
 
+```
+client  |hostapd
+   |        |
+   #---b--->#
+```
+
 The service set identifier (SSID)
 MUST
 be

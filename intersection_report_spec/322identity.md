@@ -150,16 +150,15 @@ be supported by the AP.
 
 ##### Motivation
 
-This subdomain
-MUST
-be enforced using the identity
-since APs
-MAY
-allow encrypted DNS.
-<!--
-Not enforcing it could lead to
-inconsistencies across APs.
--->
+Section *[Wireless configuration]* motivates the name of the protocol.
+We use this name (TUNroam) as the required subdomain.
+
+This subdomain MUST be enforced using the `anonid`
+since APs MAY allow encrypted DNS,
+resulting in this requirement not being verified when just using DNS filtering.
+This requirement is set to avoid inconsistencies across APs,
+where some do want to filter *[DNS]* and others do not.
+
 
 The VPN client
 MAY
@@ -177,7 +176,7 @@ and can lead to the death penalty in others
 <!--
 not sure if we should mention this example
 -->
-When clients their VPN is off,
+When a client's VPN is off,
 such apps could do DNS queries,
 which can be blocked since they do not include the specific subdomain.
 

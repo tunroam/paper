@@ -1,7 +1,13 @@
 
 ### 802.1x credentials
 
-The device needs to add a new Wi-Fi network,
+```
+client
+   |
+   a
+```
+
+The clients needs to add a new Wi-Fi network
 using the following configuration:
 
 | field | value | default |
@@ -16,9 +22,19 @@ using the following configuration:
 | password | *variable* | "password" |
 
 The *variable* fields are dependent on the
-`validate_certificate` flag being set.
+*[validate_certificate]* flag being set.
 
-#### validate_certificate = false
+When the client connects to the network,
+the anonymous identity is used to communicate the VPN endpoint to the AP.
+
+```
+client  |hostapd
+   |        |
+   a        |
+   #---b--->#
+```
+
+#### validate_certificate disabled
 
 Without certificate validation,
 the AP does not proxy the 802.1x request,
@@ -36,11 +52,11 @@ and has the flag character appended (as described in *[Protocol: AP Specificatio
 
 where `<ADDRESS-VPN-SERVER>` is an IP address or fully qualified domain name (FQDN).
 
-The password field needs to have the value "password",
+The password field needs to have the literal value "password",
 to allow the authentication server to complete the
 Challenge-Handshake Authentication Protocol (*[CHAP]*) procedure.
 
-#### validate_certificate = true
+#### validate_certificate enabled
 
 If the supplicant desires to validate the certificate,
 or has no option/rights to disable validation;
@@ -62,7 +78,9 @@ external authentication server proxied to.
 
 #### Multiple protocols and ports
 
-One can define multiple protocols and ports by separating them with an underscore,
+To allow clients to use various *[VPN protocols]*,
+one can define multiple protocols and ports.
+These are separated by an underscore,
 as seen in the following IPsec example:
 
 ```

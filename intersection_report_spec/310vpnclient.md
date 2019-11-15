@@ -1,5 +1,13 @@
 ### VPN
 
+```
+client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
+   |        |      |      |      |      |      |      |
+   #---k-------------------------=----->#      |      |
+   #<--------------------------------l--#      |      |
+   #---m-------------------------=------------------->#
+```
+
 The client
 MAY
 use the DNS server provided by the DHCP server of an AP.
@@ -14,6 +22,10 @@ VPN clients that use other protocols
 MAY
 be supported by the AP.
 
+<!--
+TODO
+the following needs more explanation, since this is too technical
+-->
 A rogue AP could
 accept a client and
 use the VPN endpoint information to only block the VPN,

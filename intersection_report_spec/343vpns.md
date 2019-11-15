@@ -1,5 +1,11 @@
 ### VPN server
 
+```
+client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
+   |        |      |      |      |      |      |      |
+   #---m-------------------------=------------------->#
+```
+
 The VPN client will run on the mobile client,
 not the AP.
 Otherwise the AP could do malicious activities using the IP address of the VPN server.

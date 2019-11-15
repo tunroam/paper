@@ -20,7 +20,9 @@ thus like any other router on the internet the traffic passes.
 
 We need traffic prioritization to prevent "free riding" by neighbors
 [@freeridersfear].
+<!--
 For our research we consider this subject out of scope.
+-->
 
 For National Research and Educational Networks
 it was found that authentication via 802.1x
