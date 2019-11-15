@@ -113,7 +113,6 @@ Scope small; under promise, over deliver.
 - https://stackoverflow.com/questions/13545725/automatically-create-bibliography-from-bibtex-in-pandoc-markdown-without-inline/13558096#13558096
 - https://www2.le.ac.uk/offices/ld/resources/writing/writing-resources/reports
 - https://www.scribbr.com/category/dissertation/
-- Dealing with page breaks: https://superuser.com/questions/601469/getting-chapters-to-start-on-a-new-page-in-a-pandoc-generated-pdf
 
 
 
