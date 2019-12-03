@@ -9,9 +9,10 @@ This could increase the
 Clients specify the VPN they connect to,
 being either a VPN provider
 &mdash; not adding an extra AP to the network &mdash;
-or another AP with VPN server.
+or another AP with VPN server,
+as shown in +@fig:vpnlocations.
 
-!["Client connects to VPN endpoint via foreign AP"](img/physical_layout.png)
+![Client connects to VPN endpoint via foreign AP](img/physical_layout.png){#fig:vpnlocations}
 
 For larger parties providing free wifi,
 there is no incentive to filter clients using a VPN provider.

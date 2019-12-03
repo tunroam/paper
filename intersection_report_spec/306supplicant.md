@@ -6,9 +6,15 @@ client
    |
    a
 ```
+![Supplicant sets network configuration (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartscan}
 
+<!--
+The client can connect to a foreign AP when found during scanning for new networks,
+as shown in step a in
+-->
 The clients needs to add a new Wi-Fi network
-using the following configuration:
+(+@fig:asciiartscan),
+using the configuration shown in +@tbl:wificonf.
 
 | field | value | default |
 | --- | ------ | --- |
@@ -20,11 +26,15 @@ using the following configuration:
 | anonymous identity | *variable*| |
 | identity | *variable* | |
 | password | *variable* | "password" |
+Table: Network configuration on supplicant {#tbl:wificonf}
 
-The *variable* fields are dependent on the
+The *variable* fields in +@tbl:wificonf
+are dependent on the
 *[validate_certificate]* flag being set.
+The static values are motivated in section *[Wireless configuration]*.
 
-When the client connects to the network,
+
+When the client connects to an AP (+@fig:asciiartinitconn),
 the anonymous identity is used to communicate the VPN endpoint to the AP.
 
 ```
@@ -33,6 +43,7 @@ client  |hostapd
    a        |
    #---b--->#
 ```
+![Supplicant connects to AP (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartinitconn}
 
 #### validate_certificate disabled
 
@@ -97,8 +108,6 @@ and
 `0x33 =` Authentication Header (AH).
 
 
-The AP
-MAY
-only allow traffic for the protocols it supports
+The AP MAY only allow traffic for the protocols it supports
 and were found valid (i.e. listening).
 

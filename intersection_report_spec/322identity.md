@@ -29,7 +29,8 @@ is a base32 character as defined by
 [RFC4648](https://tools.ietf.org/html/rfc4648),
 to represent 5 bits.
 We have defined only the first (least significant bit) for this flag character;
-the `validate_certificate` flag.
+the `validate_certificate` flag,
+as shown in +@tbl:flags.
 The flag character is an `a` if the supplicant does not validate
 the 802.1x authentication certificate (default) or a `b` when the supplicant does
 want to validate the certificate.
@@ -45,6 +46,7 @@ proxy the request.
 | 00?00 | RESERVED | |
 | 0?000 | RESERVED | |
 | ?0000 | RESERVED | |
+Table: Bits in flag character {#tbl:flags}
 
 
 ##### Motivation

@@ -5,15 +5,15 @@ client  |hostapd
    |        |
    #---b--->#
 ```
+![Client connects to AP (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartclientconn}
 
 The service set identifier (SSID)
 MUST
 be
 "tunroam.org 19".
 
-Clients
-MUST
-be able to connect using PEAP with MSCHAPv2
+Clients MUST be able to connect (+@fig:asciiartclientconn)
+using PEAP with MSCHAPv2
 as discussed in section *[EAP protocols]*.
 
 

@@ -65,11 +65,15 @@ fi
 # --personal /usr/lib/aspell/en-jargon.pws
 # the sed line removes link references
 # and code/comment blocks from spell check
+# fig,tbl and eq are from pandoc-xnos
 cat /tmp/bundled.md /tmp/meta.yml \
   | sed 's/\[@.*\]/\ /' \
   | sed 's/\[^.*\]/\ /' \
   | sed '/^```/,/^```/d' \
   | sed '/^<!--/,/-->/d' \
+  | sed 's/fig:[a-z0-9]*//' \
+  | sed 's/tbl:[a-z0-9]*//' \
+  | sed 's/eq:[a-z0-9]*//' \
   | aspell list -t \
   | sort \
   | uniq > misspelled.txt
@@ -109,9 +113,12 @@ cat << EOF > /tmp/pagenrs.tex
 \setbeamertemplate{navigation symbols}{} 
 \setbeamertemplate{footline}[frame number]
 EOF
-  OUTTYPE=" -t beamer -H /tmp/pagenrs.tex "
+  OUTTYPE="-t beamer -H /tmp/pagenrs.tex"
 else
-  OUTTYPE=""
+  OUTTYPE="--filter pandoc-xnos"
+  # this white pixel is used as a hack to get
+  # a captition under our asciiart drawings
+  convert xc:white /pixel.png
 fi
 
 pandoc \

@@ -7,13 +7,13 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #<--------------------------------l--#      |      |
    #---m-------------------------=------------------->#
 ```
+![Client connects to VPN (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartvpnconn}
 
-The client
-MAY
-use the DNS server provided by the DHCP server of an AP.
+The client MAY
+use the DNS server provided by the DHCP server of an AP,
+as shown in step `l` of @fig:asciiartvpnconn.
 
-The client
-SHOULD
+The client SHOULD
 use a VPN client that connects to the VPN server using UDP
 (e.g. OpenVPN, WireGuard or IPsec using NAT traversal
 as defined in

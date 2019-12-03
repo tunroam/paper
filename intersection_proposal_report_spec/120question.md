@@ -1,7 +1,9 @@
 ## Research question
 
 To understand the research question(s),
-we image a setup where the client connects to an AP
+an example overview is given in
++@fig:onevpnconn,
+where the client connects to an AP
 using a VPN.
 
 <!--
@@ -13,8 +15,7 @@ allowing him to connect to foreign APs and increasing his privacy
 on all networks through the VPN.
 -->
 
-!["Client connects to VPN endpoint via foreign AP"](img/vpn_connection.png) <!-- img/physical_layout.png) -->
-
+![Client connects to VPN endpoint via foreign AP](img/vpn_connection.png){#fig:onevpnconn}
 
 
 <!--

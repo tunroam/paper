@@ -32,6 +32,7 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #        #      #      #--g-->#      |      |      |
    #        #      #<--h--#      |      |      |      |
 ```
+![Custom pre-authorize script flow (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartscriptflow}
 
 The
 [`rlm_python`](https://wiki.freeradius.org/modules/Rlm_python)
@@ -70,7 +71,8 @@ by setting it as an
 `authorize`
 function.
 We inserted it before (P)EAP,
-enabling the script to judge if to Accept or Reject.
+enabling the script to judge if to Accept or Reject
+(step `f` in +@fig:asciiartscriptflow).
 
 When running the authentication server in debug mode,
 we observed that it first goes through the `authorize` section:

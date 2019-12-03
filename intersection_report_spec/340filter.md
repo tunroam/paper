@@ -11,18 +11,15 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #<--------------------------------l--#      |      |
    #---m-------------------------=------------------->#
 ```
+![Setting and enforcing network policies (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartsetfilter}
 
 It is in the interest of the AP provider to filter traffic,
-therefore we state that it
-MAY
-enforce network policies on the link layer (L2) and
-SHOULD
-on L3 and L4.
+therefore we state that it MAY
+enforce network policies (+@fig:asciiartsetfilter)
+on the link layer (L2) and SHOULD on L3 and L4.
 However, no network policies are required for a valid implementation.
 
-The AP
-SHOULD
-allow all incoming traffic and only limit the outgoing,
+The AP SHOULD allow all incoming traffic and only limit the outgoing,
 preventing the need for connection tracking.
 
 <!--
@@ -52,16 +49,11 @@ Drive-by pharming. Tech. Rep. 641, Dept. of
 Computer Science, Indiana University, Dec 2006.
 -->
 
-Network policies
-MUST
-be valid for at least
+Network policies MUST be valid for at least
 12h (or at least as long as the DHCP lease),
-after which
-the supplicant
-MAY
+after which the supplicant MAY
 need to reconnect
 to have access to its VPN again.
-A longer time span such as 24h
-MAY
+A longer time span such as 24h MAY
 result in a laptop being disconnected during work the next day.
 

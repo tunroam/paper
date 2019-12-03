@@ -1,11 +1,19 @@
 ### 802.1x authentication server
 
+<!--
+https://networkradius.com/doc/current/concepts/introduction/components.html
+-->
+The Wireless AP uses an authentication server to validate connecting supplicants.
+This authentication server MAY implement the proposed protocol in
+the *[Pre-authorize]* phase, as shown in +@fig:asciiartauthpre.
+
 ```
 client  |hostapd  auth   pre
    |        |      |      |
    #        #--c-->#      |
    #        #      #--d-->#
 ```
+![Authentication server uses *[Pre-authorize]* script (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartauthpre}
 
 #### validate_certificate
 <!--

@@ -10,7 +10,8 @@ keywords:
 - open source
 - TUNroam
 
-documentclass: article #article,book,report
+#link-citations: true
+#documentclass: article #book,report # if set, pandoc cannot do slides (beamer)
 papersize: a4 #letter
 pagestyle_report: headings
 lof: false #list of figures
@@ -56,6 +57,6 @@ linkcolor_spec: blue
 #toc-title_proposal: "____________________________"
 toc_proposal: false
 
-date_slides: 2019-11-13
+#date_slides: 2019-11-13
 ...
 

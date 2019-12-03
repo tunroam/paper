@@ -8,7 +8,7 @@ all aspects of the protocol
 are implemented
 on the same system on chip (SoC).
 
-In the following sequence diagram,
+In the sequence diagram shown in +@fig:asciiartsequence,
 `hostapd` is the Wireless Access Point (WAP),
 which is the Network Access Server (NAS).
 
@@ -32,6 +32,7 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #<--------------------------------l--#      |      |
    #---m-------------------------=------------------->#
 ```
+![Sequence diagram of example protocol implementation](/pixel.png){#fig:asciiartsequence}
 
 a. Supplicant (client) scans for an AP
 and finds a foreign AP

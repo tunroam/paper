@@ -48,6 +48,8 @@ client  |hostapd  auth
    #---b--->#      |
    #        #--c-->#
 ```
+![802.1x identity forwarded to authentication server (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartid2auth}
+
 
 The protocol describes how
 the *[802.1x identity]*
@@ -56,8 +58,10 @@ is used to encode the VPN endpoint's
 This identity is configured on the supplicant and communicated
 (via `hostapd`)
 to the *[802.1x authentication server]*,
-as seen in step b and c of the *[Protocol introduction]*.
-
+as shown in +@fig:asciiartid2auth.
+<!--
+of the *[Protocol introduction]*.
+-->
 
 
 
@@ -121,11 +125,13 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #<--------------------------------l--#      |      |
    #---m-------------------------=------------------->#
 ```
+![Network policies enforced on client (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartpoliciesenforce}
 
 We discussed
 *[Network policies]*
 that enable the AP
-to limit the outgoing traffic of clients to VPN traffic.
+to limit the outgoing traffic of clients to VPN traffic,
+as shown in +@fig:asciiartpoliciesenforce.
 *[DNS]* queries can be filtered by the AP through
 the required subdomain in the *[Hostname]*.
 

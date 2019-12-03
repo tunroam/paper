@@ -62,6 +62,8 @@ secure Wi-Fi sharing.
 | |Client|------------------------>|VPN server||
 |_|______|  |¯¯¯¯¯¯¯|  |¯¯¯¯¯¯¯¯|  |__________||
 ```
+![Client connects to VPN server at home location](/pixel.png){#fig:asciiarttunnel}
 
 When clients connect to an AP,
-all their traffic goes to their own VPN tunnel endpoint.
+all their traffic goes to their own VPN tunnel endpoint,
+as shown in +@fig:asciiarttunnel.
