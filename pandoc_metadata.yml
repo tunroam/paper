@@ -51,7 +51,7 @@ toc_report: false
 toc-depth_report: 9
 secnumdepth_report: 3
 
-linkcolor_spec: blue
+linkcolor: blue
 
 #toc-depth_proposal: 0
 #toc-title_proposal: "____________________________"

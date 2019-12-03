@@ -10,7 +10,7 @@ They are not implemented on the PoC for the following reasons:
 - During the demo, an open WiFi (after identity validation) would be more desirable
 - An actual implementation (e.g. on a campus) would not run all the components on the same device
 
-Therefore the scripts outputs network policies instead of setting them.
+Therefore the scripts outputs network policies instead of setting them:
 
 ```
 $ validate_anonid.py 11443_06443_00testA@tunroam.lent.ink
@@ -22,6 +22,10 @@ INFO suggesting whitelist rules
      --protocol 6 --dport 443' }
 INFO Welcome aboard 11443_06443_00testA@localhost
 ```
+
+In this output, the warning is caused by `00test`.
+The validation is successful since one or both of the other tuples (UDP and TCP 443)
+was found listening on the specified hostname.
 
 <!--
 done

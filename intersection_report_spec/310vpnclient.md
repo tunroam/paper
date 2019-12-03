@@ -1,5 +1,8 @@
 ### VPN
 
+The AP expects the client to connect to a VPN endpoint,
+to which it will allow (whitelist) traffic.
+
 ```
 client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    |        |      |      |      |      |      |      |
@@ -10,8 +13,9 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
 ![Client connects to VPN (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartvpnconn}
 
 The client MAY
-use the DNS server provided by the DHCP server of an AP,
-as shown in step `l` of @fig:asciiartvpnconn.
+use the DNS server provided by the DHCP server of an AP
+to resolve its VPN endpoint,
+as shown in step `l` of +@fig:asciiartvpnconn.
 
 The client SHOULD
 use a VPN client that connects to the VPN server using UDP
@@ -20,7 +24,8 @@ as defined in
 [RFC3947 section 4](https://tools.ietf.org/html/rfc3947)).
 VPN clients that use other protocols
 MAY
-be supported by the AP.
+be supported by the AP,
+as described in section *[L4 Transport layer]*.
 
 <!--
 TODO

@@ -1,6 +1,6 @@
 ## Protocol: AP Specification
 
-In the previous section (*[Protocol: Supplicant / client]*)
+In the previous section (*[Protocol: Supplicant]*)
 we read what the supplicant communicates to the AP,
 we now look into how
 &mdash; the authentication server used by &mdash;

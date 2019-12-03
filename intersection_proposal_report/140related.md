@@ -4,7 +4,8 @@ When it comes to regular APs,
 the AP operator is able to see the traffic of the clients it facilitates,
 giving the client less privacy and the operator more control on the network content.
 In the context of Open Wireless, the EFF states
-["that operators of open networks sometimes worry that they could be legally responsible if people use their networks to engage in copyright infringement."](https://www.eff.org/wp/open-wi-fi-and-copyright-primer-network-operators)
+"that operators of open networks sometimes worry that they could be legally responsible if people use their networks to engage in copyright infringement."
+[^effstates]
 The topic of copyright for Open Wireless is discussed in a white paper
 <!--
 , which *should not be taken as legal advice*
@@ -17,6 +18,8 @@ unable to read the traffic.
 <!--
 thus like any other router on the internet the traffic passes.
 -->
+
+[^effstates]: https://www.eff.org/wp/open-wi-fi-and-copyright-primer-network-operators
 
 We need traffic prioritization to prevent "free riding" by neighbors
 [@freeridersfear].

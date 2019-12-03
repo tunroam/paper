@@ -1,16 +1,19 @@
 ## Protocol introduction
 
-We provide an introduction through a
-sequence diagram showing a
-minimal example,
-where
-all aspects of the protocol
-are implemented
-on the same system on chip (SoC).
+Participating APs have a shared procedure of authenticating
+and authorizing clients.
+We will introduce this shared procedure (the protocol)
+by explaining the connection setup between a client
+and an AP.
+
 
 In the sequence diagram shown in +@fig:asciiartsequence,
 `hostapd` is the Wireless Access Point (WAP),
 which is the Network Access Server (NAS).
+In this example *[Test setup]*,
+all aspects of the protocol
+are implemented
+on the same system on chip (SoC).
 
 \pagebreak
 ```

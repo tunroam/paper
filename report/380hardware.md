@@ -75,6 +75,7 @@ For the presentation demo we decided to use NAT on the SoC,
 since this also works when the physical port 
 &mdash; the SoC connects to in the presentation rooms &mdash;
 is allowed only one DHCP lease.
+Both the bridged and NAT setup can be created using the installation scripts[^tunroamnetworking].
 
 <!--
 situations:

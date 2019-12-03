@@ -1,5 +1,8 @@
 ### Wireless configuration
 
+Participating APs have the wireless configuration described in this section.
+This shared configuration allows clients to automatically connect to a foreign AP.
+
 ```
 client  |hostapd
    |        |

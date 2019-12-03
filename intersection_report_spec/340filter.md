@@ -1,5 +1,11 @@
 ### Network policies
 
+It is in the interest of the AP provider to filter traffic,
+therefore we state that it MAY
+enforce network policies (+@fig:asciiartsetfilter)
+on the link layer (L2) and SHOULD on L3 and L4.
+However, no network policies are required for a valid implementation.
+
 ```
 client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    |        |      |      |      |      |      |      |
@@ -12,12 +18,6 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #---m-------------------------=------------------->#
 ```
 ![Setting and enforcing network policies (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartsetfilter}
-
-It is in the interest of the AP provider to filter traffic,
-therefore we state that it MAY
-enforce network policies (+@fig:asciiartsetfilter)
-on the link layer (L2) and SHOULD on L3 and L4.
-However, no network policies are required for a valid implementation.
 
 The AP SHOULD allow all incoming traffic and only limit the outgoing,
 preventing the need for connection tracking.
