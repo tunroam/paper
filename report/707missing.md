@@ -22,7 +22,7 @@ using the custom python script described in section
 ### Adherence specification
 
 The Proof of Concept (PoC)
-&mdash; created using the installation scripts &mdash;
+(created using the installation scripts)
 does not implement the full protocol.
 
 The ability to set the `validate_certificate` flag is not implemented

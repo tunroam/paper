@@ -1,8 +1,8 @@
 
-  - How could the VPN endpoint details be communicated from the supplicant to the authentication server?
-  - What modifications or configurations will enable an authentication (802.1x) server
+  1. How can the VPN endpoint details be communicated from the supplicant to the authentication server?
+  2. What modifications or configurations will enable an authentication (802.1x) server
 to set network policies based on a VPN endpoint?
-  - Which network policies are of interest to this protocol?
+  3. Which network policies are of interest to this protocol?
 <!--
   - Which authentication protocols are available on COTS clients?
   - Which network policies need to be enforced?
@@ -15,7 +15,7 @@ to set network policies based on a VPN endpoint?
   - What modifications or configurations are required to an authentication (802.1x) server to enable this protocol?
     - How would the authentication server change the network policies?
 -->
-  - Can we verify this protocol through a Proof of Concept (PoC)?
+  4. Can we verify this protocol through a Proof of Concept (PoC)?
 
 
 

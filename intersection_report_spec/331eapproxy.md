@@ -1,7 +1,7 @@
 ##### Stripping realm
 
 When the supplicant indicates
-&mdash; by setting the `validate_certificate` flag &mdash;
+(by setting the `validate_certificate` flag)
 it needs the authentication request to be proxied,
 the authentication server
 serves as a

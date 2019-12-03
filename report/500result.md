@@ -40,8 +40,6 @@ Part of our initial research questions were:
 - What attributes do we need to validate to determine if a VPN server is listening on an endpoint?
 -->
 
-*How could the VPN endpoint details be communicated from the supplicant to the authentication server?*
-
 ```
 client  |hostapd  auth
    |        |      |
@@ -62,6 +60,7 @@ as shown in +@fig:asciiartid2auth.
 <!--
 of the *[Protocol introduction]*.
 -->
+This answers sub-question 1 of our *[Research question]*.
 
 
 
@@ -77,10 +76,9 @@ of the *[Protocol introduction]*.
 - What modifications or configurations are required to an authentication (802.1x) server to enable this protocol?
 -->
 
-*What modifications or configurations will enable an authentication (802.1x) server to set network policies based on a VPN endpoint?*
 
-
-We showed that the client is able to communicate the VPN endpoint using the
+To answer sub-question 2 of our *[Research question]*,
+we showed that the client is able to communicate the VPN endpoint using the
 *[802.1x identity]*.
 This requires modifications on the *[802.1x authentication server]*,
 without changes to the authentication client (`hostapd`)
@@ -116,7 +114,6 @@ We described the modifications to the RADIUS server in section
     - What are the security implications of allowing these additional protocols and what measures can be taken to address them?
 -->
 
-*Which network policies are of interest to this protocol?*
 
 ```
 client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
@@ -127,7 +124,8 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
 ```
 ![Network policies enforced on client (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartpoliciesenforce}
 
-We discussed
+To answer sub-question 3 of our *[Research question]*,
+we discussed
 *[Network policies]*
 that enable the AP
 to limit the outgoing traffic of clients to VPN traffic,
@@ -182,12 +180,11 @@ as motivated in *[EAP protocols]*.
 
 #### Testing the protocol
 
-*Can we verify this protocol through a Proof of Concept (PoC)?*
-
 The PoC used at the presentation demo shows that the protocol is feasible.
 When clients attempt to connect, the authentication server validates their
 VPN endpoint and is able to set *[Network policies]*.
-The PoC was created using the installation scripts[^tunroamnetworking].
+The PoC was created using the installation scripts[^tunroamnetworking]
+and answers sub-question 4 of our *[Research question]*.
 
 
 
@@ -209,7 +206,7 @@ by the ISP and updating the firmware was deemed infeasible
 - Some IoT electronics we tested only support Wi-Fi using pre-shared key (PSK) <!-- and IPv4 -->
 - OpenWrt has options for remote control[^openwrtremote],
 which allows
-&mdash; an external authentication server supporting this protocol &mdash;
+an external authentication server supporting this protocol
 to push network policies.
 
 [^openwrtremote]: https://openwrt.org/docs/guide-user/services/remote_control/ostiary.server

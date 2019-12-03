@@ -121,6 +121,6 @@ the authentication server
 stays the same,
 requiring no modifications when proxying the request.
 Since the VPN endpoint validation requires an update to the authentication server
-&mdash; to support this protocol &mdash;
+(to support this protocol)
 we require this custom script to implement the DNS logic (i.e. prefix `vpn.`).
 

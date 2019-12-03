@@ -7,7 +7,7 @@ states that those policies are a
 SHOULD have.
 They are not implemented on the PoC for the following reasons:
 
-- During the demo, an open WiFi &mdash; after identity validation &mdash; would be more desirable
+- During the demo, an open WiFi (after identity validation) would be more desirable
 - An actual implementation (e.g. on a campus) would not run all the components on the same device
 
 Therefore the scripts outputs network policies instead of setting them.

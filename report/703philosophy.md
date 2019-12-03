@@ -8,7 +8,7 @@ This could increase the
 
 Clients specify the VPN they connect to,
 being either a VPN provider
-&mdash; not adding an extra AP to the network &mdash;
+(not adding an extra AP to the network)
 or another AP with VPN server,
 as shown in +@fig:vpnlocations.
 
