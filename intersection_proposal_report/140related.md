@@ -85,10 +85,10 @@ which also hides additional data such as
 the server name indication (SNI).
 
 
-### Related (free) wireless solutions
+### Related wireless solutions
 
 To get an impression of the desire for WiFi solutions,
-we present a list of examples:
+we look at some existing solutions.
 
 #### Open to selective users
 
@@ -106,30 +106,49 @@ British Telecom's [BT Wi-fi](https://www.btwifi.co.uk/).
 
 #### Open to all users
 
-- Free wireless in cities/communities/residential areas
-  - Fon provides residential WiFi in European cities and has its own router, the Fonera [@fonfonera]. Fon has an option for paid users called 'Bill' and the 'Linus' option to provide free access [@schneierwifi]
-  - The [Commotion Construction Kit](https://commotionwireless.net/docs/cck/): "guide to building community wireless networks"
-  - Using [mesh](https://wiki.techinc.nl/MeshNet) networking
-    - [FunkFeuer](https://wiki.p2pfoundation.net/Funkfeuer) in Austria
-    - [Freifunk](https://freifunk.net/en/what-is-it-about/) in Germany
-    - [Open Garden protocol](https://www.opengarden.com/protocol/)
-- Paid / broker based
-  - [iPass](https://www.ipass.com)
-  - Tmobile hotspots
-  - Vodafone hotspots
-  - [Boingo](https://www.boingo.com)
-- Ad based
-  - [World Wi-Fi](https://worldwifi.io)
-  - three-stage Stackelberg game based platform [@yu2017public]
+Providing Wi-Fi to more uses is done through
+free wireless in communities and residential areas.
+Fon provides residential WiFi in European cities and has its own router,
+the Fonera [@fonfonera].
+Fon has an option for paid users called "Bill"
+and the "Linus" option to provide free access [@schneierwifi].
+Other initiatives use [mesh](https://wiki.techinc.nl/MeshNet) networking
+to create the wireless network,
+such as
+[FunkFeuer](https://wiki.p2pfoundation.net/Funkfeuer) in Austria,
+[Freifunk](https://freifunk.net/en/what-is-it-about/) in Germany
+and
+[Open Garden protocol](https://www.opengarden.com/protocol/).
 
-#### Wi-Fi solutions that enable everyone to become an AP
+On airports you often encounter broker based solutions,
+such as
+[iPass](https://www.ipass.com),
+Tmobile/Vodafone hotspots,
+or
+[Boingo](https://www.boingo.com).
+Alternative forms of payment exist,
+such as ad based solutions,
+examples are
+[World Wi-Fi](https://worldwifi.io)
+and the three-stage Stackelberg game based platform [@yu2017public].
+
 
 #### Open to all providers and users
 
-- [Open Wireless Movement](https://openwireless.org/), which is backed by [Electronic Frontier Foundation](https://www.eff.org/issues/open-wireless)
-- Share WiFi, earn points/data/credits
-  - [Karma](https://yourkarma.com/wifi/how-it-works-3/)
-  - Open Garden protocol (uses VPN) [@opengardenmedium]
+The following Wi-Fi solutions are open for anyone to participate in,
+create an AP.
+
+The [Commotion Construction Kit](https://commotionwireless.net/docs/cck/) provides a "guide to building community wireless networks".
+The [Open Wireless Movement](https://openwireless.org/)
+provides software that can be installed on OpenWrt compatible routers.
+This movement is backed by the [Electronic Frontier Foundation](https://www.eff.org/issues/open-wireless).
+Other solutions offer Wi-Fi
+in exchange for points/data/credits,
+examples are
+[Karma](https://yourkarma.com/wifi/how-it-works-3/)
+and the
+Open Garden protocol (which uses VPN) [@opengardenmedium].
+
 
 <!--
 - Ad based
