@@ -69,7 +69,7 @@ privacy between clients by providing
 individualized encryption.
 However, this does not prevent the AP provider from eavesdropping.
 Our research will use a VPN tunnel,
-creating *end* (client) *to* VPN *end*point *encryption*
+creating **end** (client) **to** VPN **end**point **encryption**.
 
 When providers enable Wi-Fi sharing (e.g. using Fon) between homes,
 they could enable Wi-Fi roaming,
@@ -87,8 +87,10 @@ the server name indication (SNI).
 
 ### Related wireless solutions
 
-To get an impression of the desire for WiFi solutions,
-we look at some existing solutions.
+We present various
+Wi-Fi solutions
+to get an impression of existing approaches.
+
 
 ##### Open to selective users
 
@@ -97,7 +99,7 @@ such as [Eduroam](https://www.eduroam.org/) for students
 and [Govroam](https://govroam.nl/) <!-- https://govroam.be/ -->
 for government employees.
 Various internet service providers (ISPs)
-configure routers at homes as Wi-Fi APs for their customers,
+configure routers at home locations as Wi-Fi APs for their customers,
 such as
 Comcast's [xfinitywifi](https://hotspots.wifi.comcast.com/),
 KPN's [Fon](https://www.kpn.com/internet/wifi-hotspots/gratis-wifi-met-fon.htm)
@@ -106,8 +108,8 @@ British Telecom's [BT Wi-fi](https://www.btwifi.co.uk/).
 
 ##### Open to all users
 
-Providing Wi-Fi to more uses is done through
-free wireless in communities and residential areas.
+Various initiatives exist to provide free wireless for
+communities and residential areas.
 Fon provides residential WiFi in European cities and has its own router,
 the Fonera [@fonfonera].
 Fon has an option for paid users called "Bill"
@@ -117,17 +119,17 @@ to create the wireless network,
 such as
 [FunkFeuer](https://wiki.p2pfoundation.net/Funkfeuer) in Austria,
 [Freifunk](https://freifunk.net/en/what-is-it-about/) in Germany
-and
+and the
 [Open Garden protocol](https://www.opengarden.com/protocol/).
 
-On airports you often encounter broker based solutions,
+Airports often provide broker based solutions,
 such as
 [iPass](https://www.ipass.com),
 Tmobile/Vodafone hotspots,
 or
 [Boingo](https://www.boingo.com).
-Alternative forms of payment exist,
-such as ad based solutions,
+Alternative forms of payment include
+ad based solutions,
 examples are
 [World Wi-Fi](https://worldwifi.io)
 and the three-stage Stackelberg game based platform [@yu2017public].
@@ -135,8 +137,8 @@ and the three-stage Stackelberg game based platform [@yu2017public].
 
 ##### Open to all providers and users
 
-The following Wi-Fi solutions are open for anyone to participate in,
-create an AP.
+The following Wi-Fi solutions
+allow anyone to create an AP.
 
 The [Commotion Construction Kit](https://commotionwireless.net/docs/cck/) provides a "guide to building community wireless networks".
 The [Open Wireless Movement](https://openwireless.org/)
@@ -186,5 +188,6 @@ https://ieeexplore.ieee.org/abstract/document/7879333
 https://patents.google.com/patent/US20060271485A1/en
 https://www.zerotier.com
 http://www.freefi.io/
+WiFi4EU
 -->
 
