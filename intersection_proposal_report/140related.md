@@ -90,11 +90,53 @@ the server name indication (SNI).
 To get an impression of the desire for WiFi solutions,
 we present a list of examples:
 
+#### Open to selective users
+
+There are Wi-Fi initiatives for specific groups of people,
+such as [Eduroam](https://www.eduroam.org/) for students
+and [Govroam](https://govroam.nl/) <!-- https://govroam.be/ -->
+for government employees.
+Various internet service providers (ISPs)
+configure routers at homes as Wi-Fi APs for their customers,
+such as
+Comcast's [xfinitywifi](https://hotspots.wifi.comcast.com/),
+KPN's [Fon](https://www.kpn.com/internet/wifi-hotspots/gratis-wifi-met-fon.htm)
+or
+British Telecom's [BT Wi-fi](https://www.btwifi.co.uk/).
+
+#### Open to all users
+
+- Free wireless in cities/communities/residential areas
+  - Fon provides residential WiFi in European cities and has its own router, the Fonera [@fonfonera]. Fon has an option for paid users called 'Bill' and the 'Linus' option to provide free access [@schneierwifi]
+  - The [Commotion Construction Kit](https://commotionwireless.net/docs/cck/): "guide to building community wireless networks"
+  - Using [mesh](https://wiki.techinc.nl/MeshNet) networking
+    - [FunkFeuer](https://wiki.p2pfoundation.net/Funkfeuer) in Austria
+    - [Freifunk](https://freifunk.net/en/what-is-it-about/) in Germany
+    - [Open Garden protocol](https://www.opengarden.com/protocol/)
+- Paid / broker based
+  - [iPass](https://www.ipass.com)
+  - Tmobile hotspots
+  - Vodafone hotspots
+  - [Boingo](https://www.boingo.com)
+- Ad based
+  - [World Wi-Fi](https://worldwifi.io)
+  - three-stage Stackelberg game based platform [@yu2017public]
+
+#### Wi-Fi solutions that enable everyone to become an AP
+
+#### Open to all providers and users
+
+- [Open Wireless Movement](https://openwireless.org/), which is backed by [Electronic Frontier Foundation](https://www.eff.org/issues/open-wireless)
+- Share WiFi, earn points/data/credits
+  - [Karma](https://yourkarma.com/wifi/how-it-works-3/)
+  - Open Garden protocol (uses VPN) [@opengardenmedium]
+
+<!--
 - Ad based
   - [World Wi-Fi](https://worldwifi.io)
   - three-stage Stackelberg game based platform [@yu2017public]
 - Education Roaming: Eduroam
-- Government Roaming: [Govroam](https://govroam.nl/) <!-- https://govroam.be/ -->
+- Government Roaming: [Govroam](https://govroam.nl/)
 - [Open Wireless Movement](https://openwireless.org/), which is backed by [Electronic Frontier Foundation](https://www.eff.org/issues/open-wireless)
 - Share WiFi, earn points/data/credits
   - [Karma](https://yourkarma.com/wifi/how-it-works-3/)
@@ -115,7 +157,7 @@ we present a list of examples:
   - Tmobile hotspots
   - Vodafone hotspots
   - [Boingo](https://www.boingo.com)
-
+-->
 
 <!--
 TODO

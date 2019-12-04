@@ -86,7 +86,7 @@ What are the implications and or benefits of this?
 The current protocol recommends IP protocol and port number filtering.
 An attacker could use the identity to point to an DoH DNS resolver
 (e.g. `06443_11443a@[8.8.8.8|1.1.1.1]`) and use that to resolve a website.
-When the IP address of the website is know,
+When the IP address of the website is known,
 the attacker
 disconnects and reconnects,
 with the IP address of the website set in the `anonid` realm.

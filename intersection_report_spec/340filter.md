@@ -49,11 +49,17 @@ Drive-by pharming. Tech. Rep. 641, Dept. of
 Computer Science, Indiana University, Dec 2006.
 -->
 
+In the example implementation (+fig:asciiartsequence),
+the network policies are set in the authentication flow.
+When clients stay connected for an extended period,
+their DHCP lease MAY be renewed,
+but the network policies MAY not be renewed.
+
 Network policies MUST be valid for at least
 12h (or at least as long as the DHCP lease),
 after which the supplicant MAY
 need to reconnect
 to have access to its VPN again.
 A longer time span such as 24h MAY
-result in a laptop being disconnected during work the next day.
+result in a laptop having to reconnect during work the next day.
 
