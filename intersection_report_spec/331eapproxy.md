@@ -13,7 +13,7 @@ the realm part of the identity when forwarding the authentication request.
 
 ##### Motivation
 
-The external RADIUS server proxied to enables the supplicant to be presented with the same
+The external RADIUS server proxied to enable the supplicant to be presented with the same
 certificate at each AP it visits.
 It is in the interest of the supplicant
 &mdash; who is the maintainer of the authentication server proxied to &mdash;

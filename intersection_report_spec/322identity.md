@@ -3,8 +3,9 @@
 First we clarify that the 802.1x identity is separate from the VPN credentials.
 The 802.1x identity only states the VPN endpoint, not the user login for the VPN.
 
-There are two identities/usernames, an anonymous (provided to the authentication proxy)
-and the identity provided to the authentication server that provides the certificate.
+There are two identities/usernames (as shown in +@tbl:wificonf),
+1) an anonymous (provided to the authentication proxy)
+and 2) the identity provided to the authentication server that provides the certificate.
 We call the anonymous identity the `anonid` and the regular identity the `innerid`.
 The `anonid` is handled at the AP and thus needs the VPN information.
 
@@ -172,7 +173,7 @@ being logged by its ISP.
 
 Mobile devices can contain apps that indicate a lifestyle
 (e.g. Grindr; gay dating app)
-that is celebrated (with parades) in some countries
+that is celebrated with parades in some countries
 and can lead to the death penalty in others
 [@amnestypenalty].
 <!--
@@ -182,7 +183,8 @@ When a client's VPN is off,
 such apps could do DNS queries,
 which can be blocked since they do not include the specific subdomain.
 
-Pseudo filter rule:
+The following pseudo filter rule
+allows egress packets on port 53 (DNS) when it contains 'tunroam':
 
 ```
 iptables-nft -I OUTPUT -j ALLOW --algo bm \
