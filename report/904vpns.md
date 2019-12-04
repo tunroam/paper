@@ -32,7 +32,7 @@ https://www.giganews.com/vyprvpn/compare-vpn-protocols.html
 https://www.ivpn.net/pptp-vs-ipsec-ikev2-vs-openvpn-vs-wireguard
 -->
 
-### NordVPN
+##### NordVPN
 
 NordVPN lists the following options[^nordvpn]:
 
@@ -41,7 +41,7 @@ NordVPN lists the following options[^nordvpn]:
 - OpenVPN
 - IKEv2/IPsec
 
-### ExpressVPN
+##### ExpressVPN
 
 ExpressVPN lists the following options[^expressvpn]:
 

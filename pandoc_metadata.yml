@@ -49,7 +49,7 @@ abstract_report: >
 # During writing the toc can give us a good overview of the paper
 toc_report: false
 toc-depth_report: 9
-secnumdepth_report: 3
+secnumdepth_report: 4
 
 linkcolor: blue
 

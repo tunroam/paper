@@ -54,7 +54,7 @@ Clients have the option to indicate that their 802.1x request
 MUST be proxied to their
 own server (to get a known certificate).
 
-#### validate_certificate disabled
+##### validate_certificate disabled
 
 Without certificate validation,
 the AP does not proxy the 802.1x request,
@@ -77,7 +77,7 @@ The password field needs to have the literal value "password",
 to allow the authentication server to complete the
 Challenge-Handshake Authentication Protocol (*[CHAP]*) procedure.
 
-#### validate_certificate enabled
+##### validate_certificate enabled
 
 If the supplicant desires to validate the certificate,
 or has no option/rights to disable validation;
@@ -97,7 +97,7 @@ MAY
 be specified for the specific needs of the
 external authentication server proxied to.
 
-#### Multiple protocols and ports
+##### Multiple protocols and ports
 
 To allow clients to use various *[VPN protocols]*,
 one can define multiple protocols and ports.

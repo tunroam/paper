@@ -7,7 +7,7 @@ visit the source code[^authserver].
 
 [^authserver]: https://github.com/tunroam/auth-server
 
-### Overview FreeRADIUS configuration
+##### Overview FreeRADIUS configuration
 
 - `radiusd.conf` configuration loaded by daemon
   - some general configuration
@@ -93,7 +93,7 @@ Sent Access-Request Id 77 from 0.0.0.0:32774 to 127.0.0.1:1812 length 44
 (0)     policy filter_username {
 ```
 
-### Python3
+##### Python3
 
 We observe that the package manager on Raspbian 10 provides `v3.0.17`,
 while Github provides `v3.0.20` which has

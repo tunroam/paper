@@ -17,7 +17,7 @@ of the Mobile Operating System with the largest market share
 For the desktop environments we looked at a corporate Windows laptop and Chrome OS.
 The data on Apple devices is retrieved from `*.apple.com`.
 
-### Android 5.1 (Moto G first gen.)
+##### Android 5.1 (Moto G first gen.)
 
 - 802.1x EAP
   - PEAP
@@ -33,7 +33,7 @@ The data on Apple devices is retrieved from `*.apple.com`.
     - GTC
   - PWD
 
-### Android 9 (Mi A1, Android ONE)
+##### Android 9 (Mi A1, Android ONE)
 
 - 802.1x EAP
   - PEAP
@@ -50,7 +50,7 @@ The data on Apple devices is retrieved from `*.apple.com`.
   - PWD
 
 
-### Chrome OS (77.0.3865.35)
+##### Chrome OS (77.0.3865.35)
 
 - EAP
   - LEAP
@@ -66,7 +66,7 @@ The data on Apple devices is retrieved from `*.apple.com`.
     - CHAP
     - GTC
 
-### Mac
+##### Mac
 
 <!--
 Recommendations: https://opensource.apple.com/source/freeradius/freeradius-42/freeradius/raddb/eap.conf.auto.html
@@ -102,7 +102,7 @@ https://opensource.apple.com/source/freeradius/freeradius-25/freeradius/doc/rlm_
 -->
 
 
-### iOS
+##### iOS
 
 The following applies to "iOS 12.3 and later"
 [@iostypes].
@@ -114,7 +114,7 @@ The following applies to "iOS 12.3 and later"
   - EAP-FAST
 
 
-### Windows 10 (1803)
+##### Windows 10 (1803)
 
 - WPA2-Enterprise AES
   - Smart Card or other certificate

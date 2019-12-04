@@ -1,4 +1,4 @@
-##### Stripping realm
+#### Stripping realm
 
 When the supplicant indicates
 (by setting the `validate_certificate` flag)

@@ -19,7 +19,7 @@ using the custom python script described in section
 *[Implemented policies]*.
 
 
-### Adherence specification
+##### Adherence specification
 
 The Proof of Concept (PoC)
 (created using the installation scripts)

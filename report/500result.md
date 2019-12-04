@@ -31,7 +31,7 @@ Through the logs we confirmed that the
 
 
 
-#### Communicating VPN endpoint
+##### Communicating VPN endpoint
 
 <!--
 Part of our initial research questions were:
@@ -69,7 +69,7 @@ This answers sub-question 1 of our *[Research question]*.
 
 
 
-#### Implementing the protocol
+##### Implementing the protocol
 
 <!--
 - How would a client communicate to the AP its VPN endpoint?
@@ -102,7 +102,7 @@ We described the modifications to the RADIUS server in section
 
 
 
-#### Policies
+##### Policies
 
 <!--
 - How could this VPN endpoint be whitelisted?
@@ -178,7 +178,7 @@ as motivated in *[EAP protocols]*.
 
 
 
-#### Testing the protocol
+##### Testing the protocol
 
 The PoC used at the presentation demo shows that the protocol is feasible.
 When clients attempt to connect, the authentication server validates their
@@ -191,7 +191,7 @@ and answers sub-question 4 of our *[Research question]*.
 
 
 
-#### Additional
+##### Additional
 
 The following findings do not contribute
 to the protocol we developed.

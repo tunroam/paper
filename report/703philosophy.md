@@ -1,4 +1,4 @@
-#### Psychology of adoption
+##### Psychology of adoption
 
 Since the impact of this concept is dependent on the adoption,
 we need to consider that limiting some users could actually increase the adoption of APs.

@@ -37,7 +37,7 @@ refer to the definitions in
 
 
 
-#### Dynamic DNS
+##### Dynamic DNS
 
 When the VPN endpoint or the RADIUS server for `validate_certificate`
 points to a home location without a fixed IP address,
@@ -48,7 +48,7 @@ Tunnel Endpoint Discovery (TED).
 Future research could explore ways to implement this.
 
 
-#### RADIUS as a Service
+##### RADIUS as a Service
 
 If an external party offers to facilitate to serve as
 a RADIUS server implementing this protocol;
@@ -81,7 +81,7 @@ This can be mitigated by validating DNSSEC NSEC
 What are the implications and or benefits of this?
 -->
 
-#### Malicious usage without VPN
+##### Malicious usage without VPN
 
 The current protocol recommends IP protocol and port number filtering.
 An attacker could use the identity to point to an DoH DNS resolver
@@ -99,7 +99,7 @@ Future research could look into (deep) packet inspection (DPI)
 or other ways to avoid this potential abuse case.
 
 
-#### DNS log poisoning
+##### DNS log poisoning
 
 When the AP provider is the target,
 an attacker could use
@@ -108,7 +108,7 @@ in the realm part of the identity,
 resulting in the DNS query being observed by the AP's ISP.
 Future research could explore ways to mitigated this attack.
 
-#### Automatic VPN client
+##### Automatic VPN client
 
 Some devices
 [can be configured](https://www.reddit.com/r/tasker/comments/2aml7b/howtoquestion_start_openvpn_connect_profile_when/)
@@ -117,7 +117,7 @@ for specific network configurations.
 Future research could explore ways to dynamically enable
 VPN on clients for specific SSIDs.
 
-#### 802.11u
+##### 802.11u
 
 For this research we used a shared SSID,
 just like Eduroam does.
@@ -133,7 +133,7 @@ Future research could explore options to avoid the requirement of a shared SSID,
 allowing companies to broadcast their own name as SSID while supporting
 the protocol.
 
-#### Additional
+##### Additional
 
 - Bandwidth management
 - Quality of Service (QoS)

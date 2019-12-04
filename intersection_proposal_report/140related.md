@@ -90,7 +90,7 @@ the server name indication (SNI).
 To get an impression of the desire for WiFi solutions,
 we look at some existing solutions.
 
-#### Open to selective users
+##### Open to selective users
 
 There are Wi-Fi initiatives for specific groups of people,
 such as [Eduroam](https://www.eduroam.org/) for students
@@ -104,7 +104,7 @@ KPN's [Fon](https://www.kpn.com/internet/wifi-hotspots/gratis-wifi-met-fon.htm)
 or
 British Telecom's [BT Wi-fi](https://www.btwifi.co.uk/).
 
-#### Open to all users
+##### Open to all users
 
 Providing Wi-Fi to more uses is done through
 free wireless in communities and residential areas.
@@ -133,7 +133,7 @@ examples are
 and the three-stage Stackelberg game based platform [@yu2017public].
 
 
-#### Open to all providers and users
+##### Open to all providers and users
 
 The following Wi-Fi solutions are open for anyone to participate in,
 create an AP.

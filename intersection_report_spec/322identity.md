@@ -12,7 +12,7 @@ The `anonid` is handled at the AP and thus needs the VPN information.
 A practical example of parsing the `anonid` is given in section
 *[Pseudo code parse identity]*.
 
-#### Identities
+##### Identities
 
 Identities consist of a user part and a realm/domain part,
 separated by the `@` delimiter (i.e. `userpart@realmpart`).

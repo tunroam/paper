@@ -23,7 +23,7 @@ described in section *[802.1x authentication server]*
 and the other two can be found in section
 *[ FreeRADIUS modifications]*.
 
-#### Inner-tunnel
+##### Inner-tunnel
 
 The RADIUS server needs to be able to proxy the RADIUS request
 when the supplicant set the `validate_certificate` flag.
