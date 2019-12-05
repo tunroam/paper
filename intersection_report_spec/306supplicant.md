@@ -83,14 +83,16 @@ If the supplicant desires to validate the certificate,
 or has no option/rights to disable validation;
 it needs different values for the identities and password fields.
 
-Anonymous identity example:
+In the following example of an anonymous identity,
+the flag character (`b`) indicates the request needs to be proxied:
 ```
 11443b@<FQDN-EAP-SERVER>
 ```
 
-The identity is not exposed to the AP.
+The (regular) identity is not exposed to the AP
+but only seen by the server providing the certificate.
 The realm part (`<FQDN-EAP-SERVER>`) MUST be the same
-for both identities from +tbl:wificonf
+for both identities from +@tbl:wificonf
 (as described in section *[Identities]*).
 The user part of the identity and the password
 MAY
@@ -129,6 +131,6 @@ and
 -->
 
 
-The AP MAY only allow traffic for the (*[L4 Transport layer]*) protocols it supports
+The AP MAY only allow traffic for the *[L4 Transport layer]* protocols it supports
 and were found valid (i.e. listening).
 

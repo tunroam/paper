@@ -14,5 +14,6 @@ and is created with the following information:
 - IP *[Protocols and ports]* used to connect to *[VPN server]*
 - will the supplicant validate the 802.1x certificate?
 
-This section details the configuration of the client.
-The motivation for these settings can be found in section *[Protocol: AP Specification]*.
+This section details the configuration of the client,
+these settings are motivated
+in section *[Protocol: AP Specification]*.

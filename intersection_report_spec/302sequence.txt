@@ -3,7 +3,7 @@
 Participating APs have a shared procedure of authenticating
 and authorizing clients.
 We will introduce this shared procedure (the protocol)
-by explaining the connection setup between a client
+by explaining the connection setup between a supplicant
 and an AP.
 
 
@@ -35,29 +35,29 @@ client  |hostapd  auth   pre  filter| |DHCP   WAN|   VPN
    #<--------------------------------l--#      |      |
    #---m-------------------------=------------------->#
 ```
-![Sequence diagram of example protocol implementation](/pixel.png){#fig:asciiartsequence}
+![Sequence diagram of example implementation of the protocol](/pixel.png){#fig:asciiartsequence}
 
 a. Supplicant (client) scans for an AP
 and finds a foreign AP
 that matches the
-*[Wireless configuration]* (SSID).
+*[Wireless configuration]* (SSID)
 b. Supplicant connects to the authenticator
 (`hostapd`) using
 *[802.1x credentials]*,
 which communicate the VPN endpoint's
 *[Protocols and ports]* in the
-*[802.1x identity]*.
+*[802.1x identity]*
 c. Authenticator connects to the
-*[802.1x authentication server]*.
+*[802.1x authentication server]*
 d. This authentication server uses a custom
-*[Pre-authorize]* script.
+*[Pre-authorize]* script
 e. Script validates that provided information points to a VPN endpoint.
 f. `if VPN: continue else return` 802.1x rejected
 g. Script creates
 *[Network policies]*,
 these
 *[Implemented policies]*
-are set to whitelist the VPN endpoint.
+are set to whitelist the VPN endpoint
 h. OK
 i. OK
 j. 802.1x client accepted (`wlan` bridged with `eth0`; L2 access to router)
