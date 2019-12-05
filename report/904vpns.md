@@ -58,16 +58,17 @@ Chrome OS
 for using IKEv2,
 which requires more open ports than OpenVPN.
 OpenVPN allows us to filter on one port for UDP,
-which is what we will use during our research.
+which is what we used during our research.
 
 
 ### OpenVPN
 
+Besides requiring only one port,
 OpenVPN will
 "always first try UDP, and if that fails, then try TCP."[^openvpnudp]
 This allows our AP to whitelist UDP traffic,
 enabling the client to use TCP on other networks where UDP is blocked.
-This is the second motivation for picking OpenVPN over IPsec
+This was the second motivation for picking OpenVPN over IPsec
 during testing.
 
 [^openvpnudp]: https://openvpn.net/faq/why-does-openvpn-use-udp-and-tcp/
@@ -76,14 +77,14 @@ during testing.
 
 We observed that OpenVPN is usually not supported by default on OSes
 (except Chrome OS) but IPsec based tunnels are.
-This made us decide that the protocol would support
+This made us decide that the protocol MUST support
 *[Multiple protocols and ports]*.
 
 
 ### Suggestion
 
 The VPN provides a client with access to APs implementing this protocol.
-The VPN will also provide additional security when using other WiFi APs.
+The VPN will also provide additional security when using other Wi-Fi APs.
 We therefore suggest to use a VPN on all foreign Wi-Fi networks.
 
 One MAY use OpenVPN with port 443 TCP and UDP.

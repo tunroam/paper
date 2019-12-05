@@ -5,14 +5,14 @@ Good intro on the matter:
 https://sites.google.com/site/amitsciscozone/home/switching/peap---protected-eap-protocol
 -->
 
-This section details the selection of the EAP protocol we use.
-We initially looked at which EAP protocols are
+This section motivates the EAP protocol we use.
+We looked at which EAP protocols are
 available by default on consumer electronics,
 which do not authenticate via cellular/SIM.
 
 The mobile devices are composed of an older (5.1)
 and supported version (9)
-of the Mobile Operating System with the largest market share
+of the mobile Operating System (OS) with the largest market share
 [@mobilestatcounter].
 For the desktop environments we looked at a corporate Windows laptop and Chrome OS.
 The data on Apple devices is retrieved from `*.apple.com`.
@@ -157,7 +157,7 @@ However, on Windows 7 TTLS requires additional software
 This results in **PEAP-MSCHAPv2**,
 which is also suggested by
 FreeRADIUS[^freeradiusmschap]
-and available at many Eduroam networks,
+and is available at many Eduroam networks,
 such as those at the
 [University of Amsterdam](https://extranet.uva.nl/content/a-z/draadloos-internet-voor-bezoekers/beveiliging/beveiliging.html?1571231074718),
 [University Utrecht](https://handleidingen.uu.nl/handleiding/eduroam-op-chromeos/),

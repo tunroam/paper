@@ -1,6 +1,9 @@
 # Thesis RP25
 
-This repo. holds the source code of my presentation and paper.
+This repo. holds the source code of my
+[presentation](https://rp.delaat.net/2019-2020/p25/presentation.pdf)
+and
+[paper](https://rp.delaat.net/2019-2020/p25/report.pdf).
 
 ## Compiling
 

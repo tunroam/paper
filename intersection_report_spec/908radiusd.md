@@ -3,7 +3,7 @@
 This section shows some of the modifications
 done on the FreeRADIUS server.
 For the Python code and the installation script,
-visit the source code[^authserver].
+see the source code[^authserver].
 
 [^authserver]: https://github.com/tunroam/auth-server
 
@@ -95,15 +95,15 @@ Sent Access-Request Id 77 from 0.0.0.0:32774 to 127.0.0.1:1812 length 44
 
 ##### Python3
 
-We observe that the package manager on Raspbian 10 provides `v3.0.17`,
-while Github provides `v3.0.20` which has
+We observe that the package manager on Raspbian 10 provides FreeRADIUS `v3.0.17`,
+while Github provides `v3.0.20`, which includes
 [Python3](https://github.com/FreeRADIUS/freeradius-server/blob/v3.0.x/raddb/mods-available/python3).
 The discussion on Github suggests it will use a different format
 and
 &mdash; at the moment of writing &mdash;
 is under active development[^python3discuss].
 We will create our script using Python3, since Python2 is end of life (EOL)
-in less than two months.
+in less than a month.
 
 [^python3discuss]: https://github.com/FreeRADIUS/freeradius-server/issues/2351
 
