@@ -3,6 +3,12 @@
 Participating APs have the wireless configuration described in this section.
 This shared configuration allows clients to automatically connect to a foreign AP.
 
+The service set identifier (SSID)
+MUST
+be
+"tunroam.org 19".
+
+\pagebreak
 ```
 client  |hostapd
    |        |
@@ -10,10 +16,6 @@ client  |hostapd
 ```
 ![Client connects to AP (snippet from +@fig:asciiartsequence)](/pixel.png){#fig:asciiartclientconn}
 
-The service set identifier (SSID)
-MUST
-be
-"tunroam.org 19".
 
 Clients MUST be able to connect (+@fig:asciiartclientconn)
 using PEAP with MSCHAPv2

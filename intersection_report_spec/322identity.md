@@ -22,51 +22,10 @@ contain the same realm as the `innerid`
 since Windows copies the realm part of the `innerid` and uses it in the `anonid`
 [@win7eapid].
 
-
-#### Flags
-
-The last character of the user part
-is a base32 character as defined by
-[RFC4648](https://tools.ietf.org/html/rfc4648),
-to represent 5 bits.
-We have defined only the first (least significant bit) for this flag character;
-the `validate_certificate` flag,
-as shown in +@tbl:flags.
-The flag character is an '`a`' if the supplicant does not validate
-the 802.1x authentication certificate (default) or a '`b`' when the supplicant does
-want to validate the certificate.
-When the supplicant does desire to validate the certificate,
-the AP
-MUST
-proxy the request.
-
-| bit | name | description |
-| --- | ------ | ------------ |
-| 0000? | `validate_certificate` | Validate 802.1x certificate? |
-| 000?0 | RESERVED | |
-| 00?00 | RESERVED | |
-| 0?000 | RESERVED | |
-| ?0000 | RESERVED | |
-Table: Bits in flag character {#tbl:flags}
-
-
-##### Motivation
-
-We place the flag before the default delimiter (`@`),
-to enable it to be included in the delimiter, becoming a custom delimiter (`f@`).
-It is prefixed and not appended
-to require no parsing of the realm part when using the default delimiter.
-We note that the
-[realm module](https://github.com/FreeRADIUS/freeradius-server/blob/v3.0.x/raddb/mods-available/realm)
-of FreeRADIUS
-requires a single character as delimiter.
-
-We pick base32 for the flag notation from the RFC instead of base64
-to make the identity case insensitive.
-
 #### Protocols and ports
-
-The IP protocols are shown in section *[L4 Transport layer]*.
+The `anonid` starts with the user part,
+which starts with listing IP protocols and ports.
+The IP protocols are discussed in section *[L4 Transport layer]*.
 
 The supplicant communicates the IP protocols to the authentication
 server by the IP protocol id in hexadecimal.
@@ -116,9 +75,56 @@ MUST be accepted when only a subset is found valid,
 to allow configurations such as
 `32_33_11500_114500` (IPsec).
 
-#### Hostname
 
-If the realm part of the identity contains a FQDN instead of an IP address,
+#### Flags
+The flag character is appended to the list of tuples,
+making it the last character of the user part.
+
+This flag character
+is a base32 character as defined by
+[RFC4648](https://tools.ietf.org/html/rfc4648),
+to represent 5 bits.
+We have defined only the first (least significant bit) for this flag character;
+the `validate_certificate` flag,
+as shown in +@tbl:flags.
+The flag character is an '`a`' if the supplicant does not validate
+the 802.1x authentication certificate (default) or a '`b`' when the supplicant does
+want to validate the certificate.
+When the supplicant does desire to validate the certificate,
+the AP
+MUST
+proxy the request.
+
+| bit | name | description |
+| --- | ------ | ------------ |
+| 0000? | `validate_certificate` | Validate 802.1x certificate? |
+| 000?0 | RESERVED | |
+| 00?00 | RESERVED | |
+| 0?000 | RESERVED | |
+| ?0000 | RESERVED | |
+Table: Bits in flag character {#tbl:flags}
+
+
+##### Motivation
+
+We place the flag before the default delimiter (`@`),
+to enable it to be included in the delimiter, becoming a custom delimiter (`f@`).
+It is prefixed and not appended
+to require no parsing of the realm part when using the default delimiter.
+We note that the
+[realm module](https://github.com/FreeRADIUS/freeradius-server/blob/v3.0.x/raddb/mods-available/realm)
+of FreeRADIUS
+requires a single character as delimiter.
+
+We pick base32 for the flag notation from the RFC instead of base64
+to make the identity case insensitive.
+
+
+
+#### Hostname
+After the delimiter we either have an IP address or an FQDN.
+
+If the realm part of the identity contains an FQDN instead of an IP address,
 it
 MUST
 contain "`tunroam.`".

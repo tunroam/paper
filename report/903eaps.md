@@ -17,6 +17,7 @@ of the mobile Operating System (OS) with the largest market share
 For the desktop environments we looked at a corporate Windows laptop and Chrome OS.
 The data on Apple devices is retrieved from `*.apple.com`.
 
+\pagebreak
 ##### Android 5.1 (Moto G first gen.)
 
 - 802.1x EAP

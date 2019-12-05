@@ -27,7 +27,7 @@ and
 `<DOMAIN-IN-INNERID>`
 for the authentication server.
 If a supplicant provides an IP address instead of
-a FQDN,
+an FQDN,
 the AP MUST
 use this IP address for both the authentication and VPN server.
 

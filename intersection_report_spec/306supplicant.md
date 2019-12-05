@@ -89,7 +89,7 @@ the flag character (`b`) indicates the request needs to be proxied:
 11443b@<FQDN-EAP-SERVER>
 ```
 
-The (regular) identity is not exposed to the AP
+The regular identity is not exposed to the AP
 but only seen by the server providing the certificate.
 The realm part (`<FQDN-EAP-SERVER>`) MUST be the same
 for both identities from +@tbl:wificonf
