@@ -86,12 +86,12 @@ allowing every AP to use a unique self signed certificate.
 For clients that validate certificates
 (e.g. [Windows](https://support.microsoft.com/en-us/help/814394/certificate-requirements-when-you-use-eap-tls-or-peap-with-eap-tls)),
 we need to present a certificate that is trusted by the client.
-We have two options,
-provide a certificate that is signed by a trusted certificate authority
-like Let's Encrypt.
-However, this requires the private key to be shared to every AP,
+We have two options
+1) provide a certificate that is signed by a trusted certificate authority
+like Let's Encrypt
+2) proxy the request to a authentication server the supplicant trusts.
+However, the first approach requires the private key to be shared to every AP,
 allowing anyone to revoke this certificate.
-Another solution is to proxy the request to a authentication server the supplicant trusts.
 
 <!--
 The following guide shows how to disable validation in windows
@@ -107,7 +107,7 @@ We suggest to install the specific server certificate in the supplicant,
 since
 [validating the common name (CN)](https://www.securew2.com/blog/8021x-vs-https-server-certificate-validation/)
 of a certificate works for a DNS name but is not feasible for all supplicants
-(e.g. Android 9 supports it, on a Chrome OS it is not an option).
+(e.g. Android 9 supports it, on Chrome OS it is not an option).
 
 
 

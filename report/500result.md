@@ -30,7 +30,7 @@ Through the logs we confirmed that the
 
 
 
-
+\pagebreak
 ##### Communicating VPN endpoint
 
 <!--
@@ -135,7 +135,7 @@ the required subdomain in the *[Hostname]*.
 
 
 We showed example firewall rules that can be implemented.
-In our *[Test setup]*, these rules can be set by the custom *[Python3]* script,
+In our *[Test setup]*, these rules are set in the custom *[Pre-authorize]* script,
 used by the *[802.1x authentication server]*.
 
 <!--
@@ -202,8 +202,8 @@ they do provide insights for future research.
 however, this was
 [disabled](https://www.draytek.com/support/knowledge-base/5680)
 by the ISP and updating the firmware was deemed infeasible
-[@lentinkrouterisp]
-- Some IoT electronics we tested only support Wi-Fi using pre-shared key (PSK) <!-- and IPv4 -->
+[@lentinkrouterisp].
+- Some IoT electronics we tested only support Wi-Fi using pre-shared key (PSK). <!-- and IPv4 -->
 - OpenWrt has options for remote control[^openwrtremote],
 which allows
 an external authentication server supporting this protocol

@@ -39,8 +39,8 @@ refer to the definitions in
 
 ##### Dynamic DNS
 
-When the VPN endpoint or the RADIUS server for `validate_certificate`
-points to a home location without a fixed IP address,
+When the VPN endpoint or the RADIUS server proxied to
+is located at a home location without a fixed IP address,
 the server should be able to update its DNS records when the IP address changes.
 Besides DNS,
 other options exists such as *dynamic IPsec* or
@@ -50,7 +50,7 @@ Future research could explore ways to implement this.
 
 ##### RADIUS as a Service
 
-If an external party offers to facilitate to serve as
+If an external party offers to serve as
 a RADIUS server implementing this protocol;
 what would be the (trust/security/privacy) implications?
 This would allow an existing wireless infrastructure

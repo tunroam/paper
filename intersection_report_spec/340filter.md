@@ -49,7 +49,7 @@ Drive-by pharming. Tech. Rep. 641, Dept. of
 Computer Science, Indiana University, Dec 2006.
 -->
 
-In the example implementation (+fig:asciiartsequence),
+In the example implementation (+@fig:asciiartsequence),
 the network policies are set in the authentication flow.
 When clients stay connected for an extended period,
 their DHCP lease MAY be renewed,

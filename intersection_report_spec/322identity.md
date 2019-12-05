@@ -32,8 +32,8 @@ to represent 5 bits.
 We have defined only the first (least significant bit) for this flag character;
 the `validate_certificate` flag,
 as shown in +@tbl:flags.
-The flag character is an `a` if the supplicant does not validate
-the 802.1x authentication certificate (default) or a `b` when the supplicant does
+The flag character is an '`a`' if the supplicant does not validate
+the 802.1x authentication certificate (default) or a '`b`' when the supplicant does
 want to validate the certificate.
 When the supplicant does desire to validate the certificate,
 the AP
@@ -56,7 +56,6 @@ We place the flag before the default delimiter (`@`),
 to enable it to be included in the delimiter, becoming a custom delimiter (`f@`).
 It is prefixed and not appended
 to require no parsing of the realm part when using the default delimiter.
-
 We note that the
 [realm module](https://github.com/FreeRADIUS/freeradius-server/blob/v3.0.x/raddb/mods-available/realm)
 of FreeRADIUS
@@ -84,7 +83,7 @@ The AP
 MUST
 accept at least the first 3 tuples it supports.
 If the AP only allows UDP (0x11),
-it should be able to retrieve the UDP configuration
+it MUST be able to retrieve the UDP configuration
 if unsupported protocols are preceding in the identity
 (e.g. `32_33_2f_06443_11443a@10.10.10.10`).
 The AP
@@ -184,7 +183,7 @@ such apps could do DNS queries,
 which can be blocked since they do not include the specific subdomain.
 
 The following pseudo filter rule
-allows egress packets on port 53 (DNS) when it contains 'tunroam':
+allows egress packets containing 'tunroam' on port 53 (DNS):
 
 ```
 iptables-nft -I OUTPUT -j ALLOW --algo bm \

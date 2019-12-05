@@ -27,7 +27,7 @@ does not implement the full protocol.
 
 The ability to set the `validate_certificate` flag is not implemented
 (to have the request being proxied to an external RADIUS server).
-We argue this is possible (as seen in the implementation of the Eduroam network)
+We argue that this is possible (as seen in the implementation of the Eduroam network)
 and considered it out of scope for this research.
 
 The PoC currently proxies the request to a second authentication server

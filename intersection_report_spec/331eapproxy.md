@@ -24,7 +24,6 @@ We allow the proxying authentication server to
 [`strip`](https://github.com/FreeRADIUS/freeradius-server/blob/v3.0.x/raddb/proxy.conf)
 the realm part of the identity.
 This is the default behavior of FreeRADIUS.
-
 When desired, the server responding to the request MAY
 obtain its realm via reverse DNS.
 

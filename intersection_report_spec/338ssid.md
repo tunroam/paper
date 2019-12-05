@@ -25,7 +25,6 @@ as discussed in section *[EAP protocols]*.
 Versioning is possible with different SSIDs.
 The number in the required SSID
 refers to the 2019 version of the protocol.
-
 If new versions of the protocol would
 require the client to provide different information,
 the version number
